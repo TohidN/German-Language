@@ -1,0 +1,1 @@
+The dative case indicates the indirect object of the sentence. It is a person or thing for whom an activity is done. The dative case is also used after [[Dative Verbs]] and [[Dative Prepositions]].

@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "03f9d41b3adaadfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "2285b676a30c49ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38e88fd6ca92ef7e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Road Map.canvas",
+                "viewState": {
+                  "x": -730,
+                  "y": -1252.5,
+                  "zoom": -1.1028665220779175
+                }
+              }
+            }
+          },
+          {
+            "id": "d40d2c4ebe457a11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Part of Speech/Nouns/Definite Articles.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "10e5127cd8a28363",
+    "type": "split",
+    "children": [
+      {
+        "id": "42e03e924625f3b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "726b4c679e72d863",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83b9fd04f5454aa3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "negation",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4e83587894ab1580",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4faba267d78057ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "87d2e7000b4b0526",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00579ba4c9c4e1e0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Road Map.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38d3296eb7d0c283",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Road Map.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "472b2cee30fe9775",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "296494be28b0a828",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Road Map.canvas"
+              }
+            }
+          },
+          {
+            "id": "890db4e022c5a7c1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 312.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "38e88fd6ca92ef7e",
+  "lastOpenFiles": [
+    "Tenses/Present Tense.md",
+    "Tenses/Tenses.md",
+    "Road Map.canvas",
+    "Tenses",
+    "German Language.md",
+    "Negation.md",
+    "Time Expressions.md",
+    "introduction-german.pdf",
+    "Part of Speech/Nouns/Definite Articles.md",
+    "Part of Speech/Nouns/Plural Forms.md",
+    "Part of Speech/Nouns/Indefinite Articles.md",
+    "Part of Speech/Nouns/Cases/Cases.md",
+    "Part of Speech/Nouns/Grammatical Gender/Grammatical Gender.md",
+    "Suffixes/-chen.md",
+    "Part of Speech/Nouns/Cases/Genitive.md",
+    "Part of Speech/Nouns/Cases/Dative.md",
+    "Part of Speech/Nouns/Cases/Nominative.md",
+    "Part of Speech/Nouns/Cases/Accusative.md",
+    "Part of Speech/Dative Prepositions.md",
+    "Part of Speech/Dative Verbs.md",
+    "Part of Speech/Accusative Prepositions.md",
+    "Questions/W-Questions/Which (Welcher).md",
+    "Questions/W-Questions/Where to (Wohin).md",
+    "Questions/W-Questions/Where from (Woher).md",
+    "Questions/W-Questions/Where (Wo).md",
+    "Questions/W-Questions/What (Was).md",
+    "Questions/W-Questions/When (Wann).md",
+    "Questions/W-Questions/How (Wie).md",
+    "Questions/W-Questions/How, What like (Wie).md",
+    "WB",
+    "Questions/W-Questions",
+    "Questions",
+    "Word Bank/Tools & Devices",
+    "Word Bank/Locations & Travel/Vehicles",
+    "Word Bank/Math",
+    "Word Bank/People",
+    "Part of Speech/Nouns/Cases"
+  ]
+}

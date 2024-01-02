@@ -1,0 +1,41 @@
+
+| English          | German              |
+|------------------|---------------------|
+| ocean            | der Ozean           |
+| sea              | das Meer            |
+| river            | der Fluss           |
+| lake             | der See             |
+| pond             | der Teich           |
+| stream           | der Bach            |
+| waterfall        | der Wasserfall      |
+| bay              | die Bucht           |
+| canal            | der Kanal           |
+| cove             | die Bucht           |
+| delta            | das Delta           |
+| estuary          | das Flussdelta      |
+| fjord            | der Fjord           |
+| gulf             | der Golf            |
+| harbor           | der Hafen           |
+| lagoon           | die Lagune          |
+| inlet            | die Bucht           |
+| sound            | die Meerenge        |
+| strait           | die Meerenge        |
+| ocean            | der Ozean           |
+| sea              | das Meer            |
+| river            | der Fluss           |
+| lake             | der See             |
+| pond             | der Teich           |
+| stream           | der Bach            |
+| waterfall        | der Wasserfall      |
+| bay              | die Bucht           |
+| canal            | der Kanal           |
+| cove             | die Bucht           |
+| delta            | das Delta           |
+| estuary          | das Flussdelta      |
+| fjord            | der Fjord           |
+| gulf             | der Golf            |
+| harbor           | der Hafen           |
+| lagoon           | die Lagune          |
+| inlet            | die Bucht           |
+| sound            | die Meerenge        |
+| strait           | die Meerenge        |

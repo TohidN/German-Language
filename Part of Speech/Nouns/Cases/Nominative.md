@@ -1,0 +1,1 @@
+Nominative is the subject of the sentence and performs the action of the verb.

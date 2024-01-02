@@ -1,0 +1,46 @@
+
+| English   | German           |
+| --------- | ---------------- |
+| mountain  | der Berg         |
+| hill      | der Hügel        |
+| valley    | das Tal          |
+| plain     | die Ebene        |
+| desert    | die Wüste        |
+| forest    | der Wald         |
+| jungle    | der Dschungel    |
+| waterfall | der Wasserfall   |
+| river     | der Fluss        |
+| lake      | der See          |
+| beach     | der Strand       |
+| canyon    | der Canyon       |
+| plateau   | das Plateau      |
+| marsh     | das Sumpfland    |
+| glacier   | der Gletscher    |
+| volcano   | der Vulkan       |
+| tundra    | die Tundra       |
+| savanna   | die Savanne      |
+| meadow    | die Wiese        |
+| oasis     | die Oase         |
+| fjord     | der Fjord        |
+| dune      | die Düne         |
+| butte     | der Tafelberg    |
+| atoll     | das Atoll        |
+| reef      | das Riff         |
+| wetland   | das Feuchtgebiet |
+| moor      | das Moor         |
+| steppe    | die Steppe       |
+| estuary   | das Flussdelta   |
+| peninsula | die Halbinsel    |
+| isthmus   | der Isthmus      |
+| inlet     | die Bucht        |
+| bay       | die Bucht        |
+| cape      | das Kap          |
+| fjord     | der Fjord        |
+| bar       | die Sandbank     |
+| lagoon    | die Lagune       |
+| gulf      | der Golf         |
+| strait    | die Meerenge     |
+| channel   | der Kanal        |
+| harbor    | der Hafen        |
+| delta     | das Delta        |
+| cove      | die Bucht        |

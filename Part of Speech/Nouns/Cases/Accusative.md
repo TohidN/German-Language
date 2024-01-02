@@ -1,0 +1,1 @@
+The accusative case is the object of the verb and is also used after [[Accusative Prepositions]] and some [[Time Expressions]].

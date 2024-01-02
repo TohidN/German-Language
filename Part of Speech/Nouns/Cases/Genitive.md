@@ -1,0 +1,1 @@
+The genitive case establishes a relationship between two nouns but is also used in some idiomatic expressions.

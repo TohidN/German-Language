@@ -1,0 +1,51 @@
+
+| English    | German              |
+| ---------- | ------------------- |
+| sparrow    | der Spatz           |
+| robin      | die Amsel           |
+| blackbird  | die Amsel           |
+| blue jay   | der Blauhäher       |
+| cardinal   | der Kardinal        |
+| crow       | die Krähe           |
+| raven      | der Rabe            |
+| magpie     | die Elster          |
+| pigeon     | die Taube           |
+| seagull    | die Möwe            |
+| hawk       | der Falke           |
+| eagle      | der Adler           |
+| falcon     | der Falke           |
+| owl        | die Eule            |
+| vulture    | der Geier           |
+| pelican    | der Pelikan         |
+| stork      | der Storch          |
+| heron      | der Reiher          |
+| flamingo   | der Flamingo        |
+| swan       | der Schwan          |
+| duck       | die Ente            |
+| goose      | die Gans            |
+| pheasant   | der Fasan           |
+| partridge  | das Rebhuhn         |
+| quail      | die Wachtel         |
+| turkey     | der Truthahn        |
+| grouse     | das Birkhuhn        |
+| ptarmigan  | das Alpenschneehuhn |
+| pelican    | der Pelikan         |
+| cormorant  | der Kormoran        |
+| albatross  | der Albatros        |
+| puffin     | der Papageitaucher  |
+| kingfisher | der Eisvogel        |
+| woodpecker | der Specht          |
+| thrush     | die Drossel         |
+| warbler    | der Sänger          |
+| wren       | der Zaunkönig       |
+| tit        | die Meise           |
+| chaffinch  | der Buchfink        |
+| finch      | der Fink            |
+| starling   | der Star            |
+| swift      | der Mauersegler     |
+| swallow    | die Schwalbe        |
+| martin     | der Hausrotschwanz  |
+| bluebird   | der Blauhäher       |
+| blackbird  | die Amsel           |
+| wren       | der Zaunkönig       |
+| tit        | die Meise           |

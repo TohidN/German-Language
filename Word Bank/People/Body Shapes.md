@@ -1,0 +1,51 @@
+
+| English          | German          |
+|------------------|-----------------|
+| slim             | schlank         |
+| fit              | fit             |
+| athletic         | sportlich       |
+| curvy            | kurvenreich     |
+| muscular         | muskulös        |
+| plump            | mollig          |
+| chubby           | pummelig        |
+| overweight       | übergewichtig   |
+| obese            | fettleibig      |
+| skinny           | dünn            |
+| thin             | schlank         |
+| lean             | schlank         |
+| shapely          | wohlgeformt     |
+| sturdy           | stämmig         |
+| stocky           | gedrungen       |
+| broad-shouldered | breitschultrig |
+| round-faced      | rundgesichtig   |
+| double-chinned   | doppelkinnig    |
+| lanky            | schlaksig       |
+| wiry             | drahtig         |
+| svelte           | grazil          |
+| brawny           | kräftig         |
+| compact          | kompakt         |
+| full-figured     | vollschlank    |
+| hourglass-shaped | sanduhrförmig  |
+| pear-shaped      | birnenförmig   |
+| apple-shaped     | apfelförmig    |
+| well-built       | gut gebaut      |
+| chubby-cheeked   | pummelig        |
+| flabby           | schlaff         |
+| toned            | durchtrainiert  |
+| flabby           | durchhängend    |
+| broad-chested    | breitbrüstig    |
+| heavyset         | korpulent       |
+| scrawny          | dürr            |
+| gaunt            | hager           |
+| emaciated        | ausgezehrt      |
+| underweight      | untergewichtig  |
+| muscular         | muskulös        |
+| lanky            | schlaksig       |
+| portly           | beleibt         |
+| lithe            | gelenkig        |
+| sinewy           | sehnig          |
+| well-proportioned | gut proportioniert |
+| rotund          | rundlich        |
+| fleshy          | fleischig       |
+| spongy          | schwammig       |
+| sinewy          | sehnig          |

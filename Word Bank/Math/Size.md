@@ -1,0 +1,50 @@
+
+| English        | German            |
+|----------------|-------------------|
+| big            | groß              |
+| small          | klein             |
+| large          | groß              |
+| little         | wenig             |
+| tall           | groß              |
+| short          | kurz              |
+| giant          | riesig            |
+| tiny           | winzig            |
+| huge           | riesig            |
+| miniature      | winzig            |
+| colossal       | kolossal          |
+| average        | durchschnittlich  |
+| massive        | massiv            |
+| minuscule      | winzig            |
+| enormous       | enorm             |
+| gigantic       | gigantisch        |
+| puny           | armselig          |
+| petite         | zierlich          |
+| jumbo          | riesig            |
+| mammoth        | riesig            |
+| compact        | kompakt           |
+| immense        | immens            |
+| substantial    | beträchtlich      |
+| slight         | gering            |
+| grand          | großartig         |
+| infinitesimal  | unendlich klein   |
+| vast           | riesig            |
+| moderate       | mäßig             |
+| generous       | großzügig         |
+| wee            | winzig            |
+| sizeable       | beträchtlich      |
+| dainty         | zierlich          |
+| hefty          | groß              |
+| ginormous      | gigantomanisch    |
+| titchy         | winzig            |
+| titanic        | titanisch         |
+| bitty          | winzig            |
+| gargantuan     | gargantuanisch    |
+| lilliputian    | winzig            |
+| stupendous     | gigantisch        |
+| undersized     | zu klein          |
+| oversize       | übergroß          |
+| paltry         | kläglich          |
+| super-sized    | Super-groß        |
+| runty          | zwergenhaft       |
+| monumental     | monumental        |
+| dwarfish       | zwergenhaft       |

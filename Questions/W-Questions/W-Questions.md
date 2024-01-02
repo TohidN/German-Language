@@ -1,0 +1,14 @@
+---
+aliases:
+  - W-Frage
+---
+- [[What (Was)]]
+- [[Why (Warum, Wieso)]]
+- [[Who (Wer)]]
+- [[Whom (Wen)]]
+- [[Where (Wo)]]
+	- [[Where from (Woher)]]
+	- [[Where to (Wohin)]]
+- Wie? (how? what like?)
+- Wann? (when?)
+- Welcher? (which?)

@@ -1,0 +1,1 @@
+Weak verbs are regular verbs

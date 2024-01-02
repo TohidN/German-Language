@@ -1,0 +1,1 @@
+Time Words in sentences can be placed anywhere. But they can't start a yes/no question.
