@@ -1,0 +1,1 @@
+Mass Nouns are grammatically singular and takes a singular verb. E.g. ==Gemüse==

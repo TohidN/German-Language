@@ -1,6 +1,5 @@
-# Tenses Overview
- 
-```ccard
-type: folder_brief_live
-```
- 
+- Simple Tenses
+	- [[Present Tense]]
+	- [[Past Tense]]
+- Compound Tenses
+	- [[Perfect Tense]]

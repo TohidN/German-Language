@@ -1,0 +1,5 @@
+---
+aliases:
+  - Present Perfect
+  - Perfekt
+---

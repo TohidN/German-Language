@@ -1,0 +1,4 @@
+---
+tags:
+  - Plural-Suffix
+---

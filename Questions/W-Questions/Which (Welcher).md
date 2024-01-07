@@ -1,5 +1,5 @@
 ==Welcher== undergoes declension based on 
-- [[Grammatical Gender]]
+- [[Grammatical Genders]]
 - [[Numbers]]
 - [[Cases]]
 ---

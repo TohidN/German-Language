@@ -1,13 +1,14 @@
-| Nominative | Accusative | Translation |
-| ---------- | ---------- | ---------- |
-| ich        | mich       | me         |
-| du         | dich       | you        |
-| er         | ihn        | him        |
-| sie        | sie        | her        |
-| es         | es         | it         |
-| wir        | uns        | us         |
-| ihr        | euch       | you        |
-| sie        |            |            |
-Sie | sie
-Sie | them
-you (formal) |
+
+
+|          |            | English      | Nominative | Accusative |
+| -------- | ---------- | ------------ | ---------- | ---------- |
+| Singular | 1st Person | I            | ich        | mich       |
+|          | 2nd Person | you          | du         | dich       |
+|          |            | you (formal) | Sie        | Sie        |
+|          | 3rd Person | he           | er         | ihn        |
+|          |            | she          | sie        | sie        |
+|          |            | it           | es         | es         |
+| plural   | 1st Person | we           | wir        | uns        |
+|          | 2nd Person | you          | ihr        | euch       |
+|          |            | you (formal) | Sie        | Sie        |
+|          | 3rd Person | they         | Sie        | ihnen      |

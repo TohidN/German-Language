@@ -1,6 +1,4 @@
-# Indefinite Pronouns
 List of Indefinite Pronouns:
-
 - alle (all)
 - andere (other)
 - beide (both)

@@ -1,5 +1,5 @@
 Verb Types based on regularity:
-- Regular
+- [[Regular Verbs]]
 	- Weak Verbs (thousands) - regular verbs; they follow a fixed pattern.
 - Irregular
 	- Mixed Verbs (9 verbs)
@@ -39,17 +39,12 @@ Verb Placements:
 - In statements: The verb again comes in the second position. $subject+verb$
 > [!example] Ich komme aus Deutschland.
 > I come from Germany.
-
-
-- ==W Fragen== (W Questions): the verb comes second, after the question word.
+- [[W-Questions]] (W Questions): the verb comes second, after the question word.
 > [!example] Woher kommen Sie?
 > Where do you come from?
-
-
 - ==Ja/Nein Fragen== (yes/no questions): the verb comes first.
 > [!example] Kommen Sie aus Deutschland?
 > Do you come from Germany?
-
 - A comma splitting up two clauses, the second verb goes to the end of sentence.
 > [!example] Ich habe eine Pizza gegessen, weil ich Hunger hatte.
 > I ate a pizza because I was hungry.
