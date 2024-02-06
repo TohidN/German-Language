@@ -319,6 +319,8 @@ Sentences
 Schuld
 Schau
 Suffix
+Select
+Start
 sign
 semicolon
 space
@@ -655,6 +657,9 @@ schläft
 sleeping
 slept
 such
+shortened
+songs
+sources
 Zeichen
 Zeichendas
 Zeppelin
@@ -976,6 +981,9 @@ Please
 Problem
 Prost
 Pläne
+Process
+Practice
+Phrases
 point
 parenthesesthe
 parenthesesopening
@@ -1147,6 +1155,8 @@ prepared
 placed
 parts
 proper
+podcasts
+premium
 Komma
 Kolon
 Klammerndie
@@ -1522,6 +1532,7 @@ consists
 connecting
 common
 cabff
+collection
 Doppelpunktdas
 Dora
 Do
@@ -1624,6 +1635,7 @@ Danke
 Darf
 Dressing
 Dish
+Daily
 Auslassungspunkte
 Ausrufezeichen
 Anführungzeichen
@@ -2217,6 +2229,7 @@ mitnehmen
 more
 may
 mitgekommen
+minutes
 apostrophe
 aufdie
 at
@@ -2363,6 +2376,8 @@ almost
 adverb
 abstract
 add
+audiobook
+available
 Leerzeichen
 Ludwig
 Language
@@ -2499,6 +2514,8 @@ Lieblingsdinge
 Lebensmittelunverträglichkeit
 Lied
 Liebeslied
+Learning
+Listen
 runde
 rechte
 right
@@ -2723,6 +2740,8 @@ liest
 languages
 low
 leftovers
+listen
+lyrics
 zu
 zweiundzwanzin
 zwei
@@ -3307,6 +3326,7 @@ Vergleich
 Vers
 Vorwort
 Vielleicht
+Video
 hyphen
 ha
 hundred
@@ -3498,6 +3518,7 @@ Register
 Rechnung
 Reste
 Risiken
+Reading
 number
 not
 numbers
@@ -3856,6 +3877,9 @@ Trinkgeld
 Tagesgericht
 Toms
 Tom
+Tracker
+Take
+Tutorial
 tilde
 tseh
 teh
@@ -4139,6 +4163,7 @@ Geldautomaten
 Gericht
 Getränk
 Generic
+General
 Berta
 BD
 BL
@@ -4422,6 +4447,7 @@ Compound
 Caf
 Chef
 Chefs
+Concepts
 Heinrich
 HS
 HoeW
@@ -4596,6 +4622,7 @@ Interessen
 Is
 Ist
 Iss
+Interesting
 yot
 yZ
 ym
@@ -4910,6 +4937,8 @@ Musik
 Musikinstrument
 Meinung
 Many
+Music
+Musics
 Nordpol
 Notes
 Numbers
@@ -5352,6 +5381,7 @@ vacation
 vegetarische
 vegetarian
 verpacken
+via
 Wilhelm
 WT
 WU

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38e88fd6ca92ef7e",
+            "id": "bb3f9f197b2d1913",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grammar/Word Modifiers/Suffixes/-e(n).md",
+                "file": "Practice Tracker/2024-02-04.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grammar/Word Modifiers/Suffixes/-e(n).md",
+                "file": "Practice Tracker/2024-02-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grammar/Word Modifiers/Suffixes/-e(n).md",
+                "file": "Practice Tracker/2024-02-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grammar/Word Modifiers/Suffixes/-e(n).md"
+                "file": "Practice Tracker/2024-02-04.md"
               }
             }
           },
@@ -164,15 +163,33 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "daily-notes:Open today's daily note": false
     }
   },
-  "active": "38e88fd6ca92ef7e",
+  "active": "bb3f9f197b2d1913",
   "lastOpenFiles": [
+    "Practice Tracker/Practice Tracker.md",
+    "Practice Tracker/How To/Music.md",
+    "Practice Tracker/How To/Video.md",
+    "Practice Tracker/2024-02-04.md",
+    "Templates/Practice Tracker.md",
+    "Resources/Easy German.md",
+    "Resources/GermanVeryEasy.com.md",
+    "Practice Tracker/Music Practice/Music Practice.md",
+    "Practice Tracker/How To",
+    "Practice Tracker/Music Tracker/List",
+    "Practice Tracker/Music Practice",
+    "Resources/LyricsTranslate.md",
+    "Grammar/Word Modifiers/Suffixes/-e(n).md",
+    "Practice Tracker/Listening.md",
+    "Templates/Resource.md",
+    "Resources/Blinkist.md",
+    "Resources/Deutsche Welle - Learn German.md",
+    "Practice Tracker",
     "Grammar/Word Modifiers/Suffixes/-s.md",
     "Grammar/Word Modifiers/Suffixes/-nen.md",
     "Grammar/Word Modifiers/Suffixes/-n.md",
-    "Grammar/Word Modifiers/Suffixes/-e(n).md",
     "Grammar/Part of Speech/Nouns/Plural Forms.md",
     "Road Map.canvas",
     "German Language.md",
@@ -184,27 +201,10 @@
     "Common Phrases/Ordering Food.md",
     "Common Phrases/Common Phrases.md",
     "Grammar/Part of Speech/Nouns/Mass Nouns.md",
-    "Grammar/Tenses/Present Tense.md",
-    "Grammar/Tenses/Tenses.md",
     "Grammar/Tenses",
     "introduction-german.pdf",
-    "Grammar/Part of Speech/Nouns/Indefinite Articles.md",
-    "Grammar/Part of Speech/Nouns/Cases/Cases.md",
-    "Part of Speech/Nouns/Grammatical Gender/Grammatical Gender.md",
-    "Suffixes/-chen.md",
-    "Grammar/Part of Speech/Nouns/Cases/Genitive.md",
-    "Grammar/Part of Speech/Nouns/Cases/Dative.md",
-    "Grammar/Part of Speech/Nouns/Cases/Nominative.md",
-    "Grammar/Part of Speech/Nouns/Cases/Accusative.md",
-    "Grammar/Part of Speech/Dative Prepositions.md",
-    "Grammar/Part of Speech/Dative Verbs.md",
-    "Grammar/Part of Speech/Accusative Prepositions.md",
     "WB",
     "Grammar/Questions/W-Questions",
-    "Grammar/Questions",
-    "Word Bank/Tools & Devices",
-    "Word Bank/Locations & Travel/Vehicles",
-    "Word Bank/Math",
-    "Word Bank/People"
+    "Grammar/Questions"
   ]
 }
