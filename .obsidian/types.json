@@ -5,6 +5,11 @@
     "tags": "tags",
     "Available Languages": "multitext",
     "Price": "multitext",
-    "Rating": "multitext"
+    "Rating": "multitext",
+    "Music-Practice": "number",
+    "Reading-Practice": "number",
+    "Video-Tutorial": "number",
+    "New-Concepts": "number",
+    "Study Topics": "multitext"
   }
 }

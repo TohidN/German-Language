@@ -2,7 +2,8 @@
 Music-Practice: 
 Reading-Practice: 
 Video-Tutorial: 
-New-Concepts:
+New-Concepts: 
+Study Topics:
 ---
 Topics:
 - 
