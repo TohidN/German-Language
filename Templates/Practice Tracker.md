@@ -5,10 +5,6 @@ Video-Tutorial:
 New-Concepts: 
 Study Topics:
 ---
-Topics:
-- 
-
----
 Interesting Words:
 - 
 
@@ -22,6 +18,10 @@ Interesting Phrases:
 
 ---
 [[Video]]:
+- 
+
+---
+[[Reading Practice]]:
 - 
 
 ---

@@ -8,26 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb3f9f197b2d1913",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice Tracker/Practice Tracker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6e73bd62668988fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Practice Tracker/2024-02-13.md",
-                "mode": "source",
-                "source": false
+                "file": "Road Map.canvas",
+                "viewState": {
+                  "x": -1086,
+                  "y": -1331,
+                  "zoom": -0.6666666666666666
+                }
               }
             }
           },
@@ -43,8 +34,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practice Tracker/2024-02-13.md",
+                "file": "Road Map.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practice Tracker/2024-02-13.md",
+                "file": "Road Map.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practice Tracker/2024-02-13.md"
+                "file": "Road Map.canvas"
               }
             }
           },
@@ -182,36 +172,36 @@
   },
   "active": "6e73bd62668988fa",
   "lastOpenFiles": [
-    "Practice Tracker/2024-02-06.md",
-    "Practice Tracker/2024-02-13.md",
+    "German Language.md",
+    "Common Phrases/Ordering Food.md",
+    "Common Phrases/Common Phrases.md",
     "Practice Tracker/Practice Tracker.md",
+    "Practice Tracker/2024-02-13.md",
     "Templates/Practice Tracker.md",
+    "Resources/ReadLang.com.md",
+    "Practice Tracker/2024-02-7.md",
+    "Resources/imTranslator.md",
+    "Practice Tracker/Meta/Reading & Writing.md",
+    "Practice Tracker/Meta/Music.md",
+    "Practice Tracker/Meta/Reading Practice.md",
+    "Practice Tracker/Meta/Video.md",
+    "Practice Tracker/Meta/Music Tracker.md",
+    "Video.md",
+    "Templates/Example.md",
+    "Practice Tracker/Meta/Video Tracker.md",
+    "Practice Tracker/Meta/New Concepts.md",
+    "Practice Tracker/2024-02-06.md",
+    "Templates/Grammatical Tips.md",
     "Grammar/Time Expressions.md",
     "Grammar/Part of Speech/Nouns/Mass Nouns.md",
     "Practice Tracker/2024-02-05.md",
-    "Templates/Example.md",
-    "Templates/Grammatical Tips.md",
-    "Practice Tracker/Meta/Video Tracker.md",
-    "Practice Tracker/Meta/Reading Practice.md",
-    "Practice Tracker/Meta/New Concepts.md",
-    "Practice Tracker/Meta/Music Tracker.md",
     "Practice Tracker/Meta",
     "Resources/TodaiiGerman.md",
     "Resources/Beelinguapp.md",
     "Practice Tracker/2024-02-04.md",
-    "Practice Tracker/How To/Music.md",
-    "Practice Tracker/How To/Video.md",
-    "Resources/Easy German.md",
-    "Resources/GermanVeryEasy.com.md",
-    "Practice Tracker/Music Practice/Music Practice.md",
     "Practice Tracker/How To",
     "Practice Tracker/Music Tracker/List",
     "Practice Tracker/Music Practice",
-    "Resources/LyricsTranslate.md",
-    "Grammar/Word Modifiers/Suffixes/-e(n).md",
-    "Practice Tracker/Listening.md",
-    "Templates/Resource.md",
-    "Resources/Blinkist.md",
     "Practice Tracker",
     "Road Map.canvas",
     "Grammar",

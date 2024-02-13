@@ -323,6 +323,9 @@ Select
 Start
 Stuff
 Study
+Sentence
+Structures
+Simple
 sign
 semicolon
 space
@@ -666,6 +669,11 @@ startWeekOn
 selectedRingColor
 start
 stuff
+schon
+seit
+später
+spannend
+sentences
 Zeichen
 Zeichendas
 Zeppelin
@@ -860,6 +868,8 @@ definitive
 displayed
 description
 descriptive
+dann
+declarative
 Punkt
 Pronunciation
 Paula
@@ -993,6 +1003,7 @@ Pläne
 Process
 Practice
 Phrases
+Personen
 point
 parenthesesthe
 parenthesesopening
@@ -1166,6 +1177,8 @@ parts
 proper
 podcasts
 premium
+plaudern
+professionally
 Komma
 Kolon
 Klammerndie
@@ -1546,6 +1559,8 @@ column
 callout
 code
 console
+click
+conjunctions
 Doppelpunktdas
 Dora
 Do
@@ -1811,6 +1826,9 @@ Art
 Autobahn
 After
 Angst
+Aber
+ALL
+Actually
 ellipsis
 exclamation
 eckigen
@@ -1945,6 +1963,7 @@ englische
 element
 emphasize
 example
+extension
 Fragezeichen
 Friedrich
 Fünftel
@@ -2077,6 +2096,7 @@ Futter
 Fugenlaut
 Frauen
 Function
+Family
 question
 quotation
 qUS
@@ -2247,6 +2267,7 @@ mitgekommen
 minutes
 multi
 msg
+mehr
 apostrophe
 aufdie
 at
@@ -2396,6 +2417,8 @@ add
 audiobook
 available
 annotation
+auch
+addition
 Leerzeichen
 Ludwig
 Language
@@ -2980,6 +3003,8 @@ bringen
 bring
 bill
 buying
+beruflich
+bookmark
 inequality
 in
 iks
@@ -3192,6 +3217,8 @@ glutenfrei
 gluten
 geschlafen
 general
+gehören
+gehört
 umgekehrte
 understrike
 uh
@@ -3240,6 +3267,7 @@ undergoes
 understand
 upset
 unless
+unserer
 Unterstrich
 Ulrich
 Umlaut
@@ -3542,6 +3570,7 @@ Reste
 Risiken
 Reading
 Remove
+Read
 number
 not
 numbers
@@ -3620,6 +3649,10 @@ new
 names
 negating
 null
+natürlich
+nSimple
+nSentences
+nSentence
 Et
 English
 Example
@@ -3720,6 +3753,7 @@ Email
 Emails
 ExampleRegion
 Error
+Eigentlich
 Tilde
 Theodor
 The
@@ -3907,6 +3941,7 @@ Tracker
 Take
 Tutorial
 Text
+TTS
 tilde
 tseh
 teh
@@ -4068,6 +4103,9 @@ tenses
 translation
 tags
 todayRingColor
+treffen
+texts
+translations
 German
 Gustav
 Ga
@@ -4192,6 +4230,7 @@ Gericht
 Getränk
 Generic
 General
+Großeltern
 Berta
 BD
 BL
@@ -4653,6 +4692,7 @@ Ist
 Iss
 Interesting
 INPUT
+Ingenieur
 yot
 yZ
 ym
@@ -4733,6 +4773,7 @@ Job
 Junge
 Jungen
 Jobs
+Jahren
 kah
 kuh
 kJ
@@ -4799,6 +4840,8 @@ kalt
 krank
 kochen
 kind
+können
+klingt
 Martha
 Million
 Mz
@@ -4972,6 +5015,7 @@ Musics
 Mon
 More
 MD
+Mutter
 Nordpol
 Notes
 Numbers
@@ -5136,6 +5180,7 @@ over
 opinion
 option
 origin
+objects
 Otto
 Oops
 Ordinal
@@ -5352,6 +5397,8 @@ fair
 few
 foreign
 ff
+freuen
+flashcard
 veh
 vier
 vierzehn
@@ -5558,6 +5605,8 @@ Wetter
 Wasser
 Weinen
 Writing
+Work
+Works
 Xanthippe
 XA
 Xyf
@@ -5721,6 +5770,8 @@ wines
 wasn
 writing
 world
+wohne
+würde
 äüöß
 ängstlich
 än
