@@ -1,4 +1,6 @@
 {
   "format": "YYYY-MM-DD",
-  "folder": "Practice Tracker"
+  "folder": "Practice Tracker",
+  "template": "Templates/Practice Tracker",
+  "autorun": false
 }

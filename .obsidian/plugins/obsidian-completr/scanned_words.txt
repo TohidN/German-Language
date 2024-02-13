@@ -321,6 +321,7 @@ Schau
 Suffix
 Select
 Start
+Stuff
 sign
 semicolon
 space
@@ -660,6 +661,10 @@ such
 shortened
 songs
 sources
+startWeekOn
+selectedRingColor
+start
+stuff
 Zeichen
 Zeichendas
 Zeppelin
@@ -851,6 +856,9 @@ depending
 didn
 dropping
 definitive
+displayed
+description
+descriptive
 Punkt
 Pronunciation
 Paula
@@ -1533,6 +1541,10 @@ connecting
 common
 cabff
 collection
+column
+callout
+code
+console
 Doppelpunktdas
 Dora
 Do
@@ -1931,6 +1943,7 @@ enthalten
 englische
 element
 emphasize
+example
 Fragezeichen
 Friedrich
 Fünftel
@@ -2062,6 +2075,7 @@ Freizeit
 Futter
 Fugenlaut
 Frauen
+Function
 question
 quotation
 qUS
@@ -2230,6 +2244,8 @@ more
 may
 mitgekommen
 minutes
+multi
+msg
 apostrophe
 aufdie
 at
@@ -2378,6 +2394,7 @@ abstract
 add
 audiobook
 available
+annotation
 Leerzeichen
 Ludwig
 Language
@@ -2516,6 +2533,7 @@ Lied
 Liebeslied
 Learning
 Listen
+Learned
 runde
 rechte
 right
@@ -2742,6 +2760,7 @@ low
 leftovers
 listen
 lyrics
+let
 zu
 zweiundzwanzin
 zwei
@@ -3042,6 +3061,7 @@ its
 item
 indicators
 include
+inside
 geschweiften
 geschwungenen
 geh
@@ -3440,6 +3460,7 @@ hältst
 hast
 hätte
 hastily
+headerMonthColor
 Rautenzeichen
 Richard
 References
@@ -3519,6 +3540,7 @@ Rechnung
 Reste
 Risiken
 Reading
+Remove
 number
 not
 numbers
@@ -3596,6 +3618,7 @@ neues
 new
 names
 negating
+null
 Et
 English
 Example
@@ -3694,6 +3717,8 @@ Eile
 Enten
 Email
 Emails
+ExampleRegion
+Error
 Tilde
 Theodor
 The
@@ -3880,6 +3905,7 @@ Tom
 Tracker
 Take
 Tutorial
+Text
 tilde
 tseh
 teh
@@ -4040,6 +4066,7 @@ them
 tenses
 translation
 tags
+todayRingColor
 German
 Gustav
 Ga
@@ -4448,6 +4475,7 @@ Caf
 Chef
 Chefs
 Concepts
+Callouts
 Heinrich
 HS
 HoeW
@@ -4623,6 +4651,7 @@ Is
 Ist
 Iss
 Interesting
+INPUT
 yot
 yZ
 ym
@@ -4939,6 +4968,9 @@ Meinung
 Many
 Music
 Musics
+Mon
+More
+MD
 Nordpol
 Notes
 Numbers
@@ -5034,6 +5066,7 @@ Nominative
 Neuter
 No
 Negative
+Nested
 oh
 or
 one
@@ -5317,6 +5350,7 @@ fault
 fair
 few
 foreign
+ff
 veh
 vier
 vierzehn
@@ -5522,6 +5556,7 @@ Wi
 Wetter
 Wasser
 Weinen
+Writing
 Xanthippe
 XA
 Xyf
@@ -5684,6 +5719,7 @@ wird
 wines
 wasn
 writing
+world
 äüöß
 ängstlich
 än
@@ -5734,6 +5770,7 @@ jagen
 just
 job
 juice
+js
 öj
 ökologische
 öffnet

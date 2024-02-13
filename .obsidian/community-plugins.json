@@ -1,10 +1,12 @@
 [
-  "obsidian-doubleshift",
+  "folder-note-plugin",
   "table-editor-obsidian",
   "obsidian-completr",
+  "obsidian-doubleshift",
+  "obsidian-git",
+  "obsidian-columns",
   "settings-search",
-  "symbols-prettifier",
+  "obsidian-tracker",
   "obsidian-text-format",
-  "folder-note-plugin",
-  "obsidian-git"
+  "symbols-prettifier"
 ]

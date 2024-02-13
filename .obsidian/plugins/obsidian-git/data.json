@@ -1,5 +1,5 @@
 {
-  "commitMessage": "My auto vault backup: {{date}}",
+  "commitMessage": "Backup of {{numFiles}} files including: {{files}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 10,
   "autoPushInterval": 0,
@@ -23,7 +23,7 @@
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
   "showBranchStatusBar": true,
-  "setLastSaveToLastCommit": false,
+  "setLastSaveToLastCommit": true,
   "submoduleRecurseCheckout": false,
   "gitDir": "",
   "showFileMenu": true,
@@ -52,5 +52,5 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
-  "autoCommitMessage": "My vault backup: {{date}}"
+  "autoCommitMessage": "Automatic Backup of {{numFiles}} files including: {{files}}"
 }

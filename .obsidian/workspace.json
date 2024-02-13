@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice Tracker/2024-02-04.md",
+                "file": "Practice Tracker/Practice Tracker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e73bd62668988fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practice Tracker/2024-02-06.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practice Tracker/2024-02-04.md",
+                "file": "Practice Tracker/2024-02-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practice Tracker/2024-02-04.md",
+                "file": "Practice Tracker/2024-02-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practice Tracker/2024-02-04.md"
+                "file": "Practice Tracker/2024-02-06.md"
               }
             }
           },
@@ -163,16 +176,27 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "daily-notes:Open today's daily note": false
+      "daily-notes:Open today's daily note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb3f9f197b2d1913",
+  "active": "6e73bd62668988fa",
   "lastOpenFiles": [
     "Practice Tracker/Practice Tracker.md",
+    "Templates/Example.md",
+    "Templates/Grammatical Tips.md",
+    "Practice Tracker/Meta/Video Tracker.md",
+    "Practice Tracker/Meta/Reading Practice.md",
+    "Practice Tracker/Meta/New Concepts.md",
+    "Practice Tracker/Meta/Music Tracker.md",
+    "Practice Tracker/2024-02-05.md",
+    "Practice Tracker/Meta",
+    "Practice Tracker/2024-02-06.md",
+    "Resources/TodaiiGerman.md",
+    "Resources/Beelinguapp.md",
+    "Practice Tracker/2024-02-04.md",
     "Practice Tracker/How To/Music.md",
     "Practice Tracker/How To/Video.md",
-    "Practice Tracker/2024-02-04.md",
     "Templates/Practice Tracker.md",
     "Resources/Easy German.md",
     "Resources/GermanVeryEasy.com.md",
@@ -189,22 +213,11 @@
     "Practice Tracker",
     "Grammar/Word Modifiers/Suffixes/-s.md",
     "Grammar/Word Modifiers/Suffixes/-nen.md",
-    "Grammar/Word Modifiers/Suffixes/-n.md",
-    "Grammar/Part of Speech/Nouns/Plural Forms.md",
     "Road Map.canvas",
-    "German Language.md",
-    "Grammar/Time Expressions.md",
-    "Grammar/Part of Speech/Nouns/Definite Articles.md",
-    "Grammar/Negation.md",
-    "Grammar/Compound Words.md",
     "Grammar",
-    "Common Phrases/Ordering Food.md",
-    "Common Phrases/Common Phrases.md",
-    "Grammar/Part of Speech/Nouns/Mass Nouns.md",
     "Grammar/Tenses",
     "introduction-german.pdf",
     "WB",
-    "Grammar/Questions/W-Questions",
-    "Grammar/Questions"
+    "Grammar/Questions/W-Questions"
   ]
 }
