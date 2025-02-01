@@ -1,13 +1,13 @@
 [
-  "folder-note-plugin",
   "table-editor-obsidian",
   "obsidian-completr",
   "obsidian-doubleshift",
-  "obsidian-git",
   "obsidian-columns",
   "settings-search",
   "obsidian-tracker",
   "obsidian-text-format",
-  "symbols-prettifier",
-  "beautitab"
+  "beautitab",
+  "obsidian-git",
+  "folder-notes",
+  "enhanced-symbols-prettifier"
 ]

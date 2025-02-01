@@ -1,0 +1,13 @@
+{
+  "backgroundTheme": "forest",
+  "customBackground": "",
+  "showTopLeftSearchButton": true,
+  "topLeftSearchProvider": "switcher:open",
+  "showTime": true,
+  "showGreeting": false,
+  "greetingText": "Hello, Beautiful.",
+  "showInlineSearch": true,
+  "inlineSearchProvider": "switcher:open",
+  "showRecentFiles": true,
+  "showQuote": true
+}

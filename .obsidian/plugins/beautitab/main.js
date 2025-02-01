@@ -6256,15 +6256,13 @@ var require_jsx_runtime = __commonJS({
 // main.ts
 var main_exports = {};
 __export(main_exports, {
-  BackgroundTheme: () => BackgroundTheme,
-  SearchProvider: () => SearchProvider,
   default: () => BeautitabPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian3 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 
 // Views/ReactView.tsx
-var import_obsidian2 = require("obsidian"), import_client = __toESM(require_client());
+var import_obsidian3 = require("obsidian"), import_client = __toESM(require_client());
 
 // React/Components/App/App.tsx
 var import_react2 = __toESM(require_react());
@@ -6273,11 +6271,17 @@ var import_react2 = __toESM(require_react());
 var import_react = __toESM(require_react()), ObsidianContext = (0, import_react.createContext)(void 0), useObsidian = () => (0, import_react.useContext)(ObsidianContext);
 
 // React/Components/App/App.tsx
-var import_obsidian = require("obsidian");
+var import_obsidian2 = require("obsidian");
+
+// src/Types/Enums.ts
+var BackgroundTheme = /* @__PURE__ */ ((BackgroundTheme2) => (BackgroundTheme2.SEASONS_AND_HOLIDAYS = "seasons and holidays", BackgroundTheme2.WINTER = "winter", BackgroundTheme2.SPRING = "spring", BackgroundTheme2.SUMMER = "summer", BackgroundTheme2.FALL = "fall", BackgroundTheme2.MOUNTAIN = "mountains", BackgroundTheme2.LAKES = "lakes", BackgroundTheme2.FOREST = "forest", BackgroundTheme2.ANIMALS = "animals", BackgroundTheme2.CUSTOM = "custom", BackgroundTheme2.LOCAL = "local", BackgroundTheme2.TRANSPARENT = "transparent", BackgroundTheme2.TRANSPARENT_WITH_SHADOWS = "transparent with shadows", BackgroundTheme2))(BackgroundTheme || {});
+var QUOTE_SOURCE = /* @__PURE__ */ ((QUOTE_SOURCE2) => (QUOTE_SOURCE2.QUOTEABLE = "Quoteable", QUOTE_SOURCE2.MY_QUOTES = "My quotes", QUOTE_SOURCE2.BOTH = "Both", QUOTE_SOURCE2))(QUOTE_SOURCE || {});
 
 // React/Utils/getTime.ts
-var getTime = () => {
-  let today = /* @__PURE__ */ new Date(), hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours() === 0 ? 12 : today.getHours(), minutes = today.getMinutes().toString().padStart(2, "0");
+var getTime = (timeFormat) => {
+  let today = /* @__PURE__ */ new Date(), hours;
+  timeFormat === "12-hour" /* TWELVE_HOUR */ ? hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours() === 0 ? 12 : today.getHours() : hours = today.getHours().toString().padStart(2, "0");
+  let minutes = today.getMinutes().toString().padStart(2, "0");
   return `${hours}:${minutes}`;
 }, getTime_default = getTime;
 
@@ -6310,7 +6314,7 @@ var getSeasonalTag = (date) => {
         case 2:
           return "groundhog" /* GROUNDHOG_DAY */;
         case 14:
-          return "valintine" /* VALINTINES_DAY */;
+          return "valentine" /* VALENTINES_DAY */;
         default:
           return "winter" /* WINTER */;
       }
@@ -6374,21 +6378,89 @@ var getSeasonalTag = (date) => {
     case 12 /* DECEMBER */:
       return day === 31 ? "fireworks" /* NEW_YEARS */ : "christmas" /* CHRISTMAS */;
   }
-}, getBackground = (backgroundTheme, customBackground) => {
+}, getBackground = (backgroundTheme, customBackground, localBackgrounds) => {
   switch (backgroundTheme) {
     case "seasons and holidays" /* SEASONS_AND_HOLIDAYS */:
       return `https://source.unsplash.com/random?${getSeasonalTag(/* @__PURE__ */ new Date())}&cachetag=${(/* @__PURE__ */ new Date()).toDateString().replace(/ /g, "")}`;
     case "custom" /* CUSTOM */:
       return customBackground;
+    case "local" /* LOCAL */:
+      return localBackgrounds[Math.floor(Math.random() * localBackgrounds.length)];
+    case "transparent with shadows" /* TRANSPARENT_WITH_SHADOWS */:
+    case "transparent" /* TRANSPARENT */:
+      return null;
     default:
       return `https://source.unsplash.com/random?${backgroundTheme}&cachetag=${(/* @__PURE__ */ new Date()).toDateString().replace(/ /g, "")}`;
   }
 }, getBackground_default = getBackground;
 
+// React/Utils/getTimeOfDayGreeting.ts
+var getTimeOfDayGreeting = () => {
+  let hours = (/* @__PURE__ */ new Date()).getHours();
+  return hours >= 18 || hours < 5 ? "Good evening" : hours >= 12 ? "Good afternoon" : "Good morning";
+}, getTimeOfDayGreeting_default = getTimeOfDayGreeting;
+
+// React/Utils/getBookmarks.ts
+var flattenBookmarks = (items) => {
+  let flattedBookmarks = [];
+  return items.forEach((item) => {
+    item.type === "file" ? flattedBookmarks.push(item) : item.type === "group" && (flattedBookmarks = flattedBookmarks.concat(
+      flattenBookmarks(item.items)
+    ));
+  }), flattedBookmarks;
+}, getBookmarksByGroupName = (title, items) => {
+  let flattedBookmarks = [];
+  return items.forEach((item) => {
+    if (item.type === "group")
+      if (console.log(`Found group with title ${item.title}`), item.title === title)
+        console.log("found match!", item.items), flattedBookmarks = flattenBookmarks(item.items);
+      else {
+        let bookmarks = getBookmarksByGroupName(title, item.items);
+        bookmarks.length > 0 && (flattedBookmarks = bookmarks);
+      }
+  }), flattedBookmarks;
+}, getBookmarks = (app, settings) => {
+  let bookmarks = app == null ? void 0 : app.internalPlugins.plugins.bookmarks.instance.items;
+  return settings.bookmarkSource === "group" /* GROUP */ ? bookmarks = getBookmarksByGroupName(settings.bookmarkGroup, bookmarks) : bookmarks = flattenBookmarks(bookmarks), bookmarks.map(
+    (bookmark) => app == null ? void 0 : app.vault.getAbstractFileByPath(bookmark.path)
+  );
+}, flattenBookmarkGroups = (items, parentPath = null) => {
+  let flattedGroups = [];
+  return items.forEach((item) => {
+    if (item.type === "group") {
+      let path = parentPath ? `${parentPath}/${item.title}` : item.title;
+      flattedGroups.push({ title: item.title, path }), flattedGroups = flattedGroups.concat(
+        flattenBookmarkGroups(item.items, path)
+      );
+    }
+  }), flattedGroups;
+}, getBookmarkGroups = (app) => {
+  let bookmarks = app == null ? void 0 : app.internalPlugins.plugins.bookmarks.instance.items;
+  return flattenBookmarkGroups(bookmarks);
+};
+
+// React/Utils/getQuote.ts
+var import_obsidian = require("obsidian");
+var getQuote = async (quoteSource, customQuotes) => {
+  let actualQuoteSource = quoteSource, quote = {};
+  if (quoteSource === "Both" /* BOTH */ && (actualQuoteSource = ["Quoteable" /* QUOTEABLE */, "My quotes" /* MY_QUOTES */][Math.floor(Math.random() * 2)]), actualQuoteSource === "Quoteable" /* QUOTEABLE */)
+    quote = await (0, import_obsidian.requestUrl)("https://api.quotable.io/random").then(
+      async (res) => {
+        if (res.status === 200)
+          return await res.json;
+      }
+    );
+  else if (actualQuoteSource === "My quotes" /* MY_QUOTES */) {
+    let randomQuote = customQuotes[Math.floor(Math.random() * customQuotes.length)];
+    quote = { content: randomQuote.text, author: randomQuote.author };
+  }
+  return quote;
+}, getQuote_default = getQuote;
+
 // React/Components/App/App.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
   let iconText = new XMLSerializer().serializeToString(
-    (0, import_obsidian.getIcon)(name) || new Node()
+    (0, import_obsidian2.getIcon)(name) || new Node()
   );
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     "span",
@@ -6399,35 +6471,48 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
       }
     }
   );
-}, App = ({ settingsObservable }) => {
-  let [time, setTime] = (0, import_react2.useState)(getTime_default()), [quote, setQuote] = (0, import_react2.useState)(null), [settings, setSettings] = (0, import_react2.useState)(
+}, App = ({
+  settingsObservable,
+  plugin
+}) => {
+  let [quote, setQuote] = (0, import_react2.useState)(null), [settings, setSettings] = (0, import_react2.useState)(
     settingsObservable.getValue()
-  ), obsidian = useObsidian(), background = getBackground_default(
-    settings.backgroundTheme,
-    settings.customBackground
+  ), [time, setTime] = (0, import_react2.useState)(getTime_default(settings.timeFormat)), mainDivRef = (0, import_react2.useRef)(null), obsidian = useObsidian(), background = (0, import_react2.useMemo)(
+    () => getBackground_default(
+      settings.backgroundTheme,
+      settings.customBackground,
+      settings.localBackgrounds
+    ),
+    [
+      settings.backgroundTheme,
+      settings.customBackground,
+      settings.localBackgrounds
+    ]
   ), allVaultFiles = obsidian == null ? void 0 : obsidian.vault.getAllLoadedFiles(), latestModifiedMarkdownFiles = (0, import_react2.useMemo)(() => {
     let files = allVaultFiles == null ? void 0 : allVaultFiles.filter(
-      (file) => file instanceof import_obsidian.TFile && file.extension === "md"
+      (file) => file instanceof import_obsidian2.TFile && file.extension === "md"
     );
     return files == null || files.sort(
-      (a, b) => a instanceof import_obsidian.TFile && b instanceof import_obsidian.TFile ? b.stat.mtime - a.stat.mtime : 0
+      (a, b) => a instanceof import_obsidian2.TFile && b instanceof import_obsidian2.TFile ? b.stat.mtime - a.stat.mtime : 0
     ), files == null ? void 0 : files.slice(0, 5);
-  }, [allVaultFiles]);
+  }, [allVaultFiles]), bookmarks = (0, import_react2.useMemo)(
+    () => getBookmarks(obsidian, settings).slice(0, 5),
+    [obsidian, settings]
+  );
   return (0, import_react2.useEffect)(() => {
     let timer = setInterval(() => {
-      setTime(getTime_default());
+      setTime(getTime_default(settings.timeFormat));
     }, 1e3);
     return () => {
       clearInterval(timer);
     };
-  }, [setTime]), (0, import_react2.useEffect)(() => {
-    (0, import_obsidian.requestUrl)("https://api.quotable.io/random").then(async (res) => {
-      if (res.status === 200) {
-        let response = await res.json;
-        setQuote(response);
+  }, [setTime, settings]), (0, import_react2.useEffect)(() => {
+    getQuote_default(settings.quoteSource, settings.customQuotes).then(
+      (newQuote) => {
+        setQuote(newQuote);
       }
-    });
-  }, [setQuote]), (0, import_react2.useEffect)(() => {
+    );
+  }, [setQuote, settings.quoteSource, settings.customQuotes]), (0, import_react2.useEffect)(() => {
     let unsubscribe = settingsObservable.onChange(
       (newSettings) => {
         setSettings(newSettings);
@@ -6436,22 +6521,34 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
     return () => {
       unsubscribe();
     };
-  }, [setSettings]), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  }, [setSettings]), (0, import_react2.useEffect)(() => {
+    var _a;
+    (_a = mainDivRef == null ? void 0 : mainDivRef.current) == null || _a.focus();
+  }, []), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     "div",
     {
-      className: "beautitab-root",
+      className: `beautitab-root ${settings.backgroundTheme === "transparent" /* TRANSPARENT */ && "beautitab-root--transparent"}
+			
+			${settings.backgroundTheme === "transparent with shadows" /* TRANSPARENT_WITH_SHADOWS */ && "beautitab-root--transparentWithShadows"}
+			`,
       style: {
-        // @ts-ignore
-        "--background": `url("${background}")`
+        backgroundImage: `url("${background}")`
       },
+      onKeyDown: (e) => {
+        !e.ctrlKey && !e.altKey && /^[A-Za-z0-9]$/.test(e.key) && plugin.openSwitcherCommand(
+          settings.inlineSearchProvider.command
+        );
+      },
+      tabIndex: 0,
+      ref: mainDivRef,
       children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "beautitab-wrapper", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-top", children: settings.showTopLeftSearchButton && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
           "a",
           {
             className: "beautitab-iconbutton",
             onClick: () => {
-              obsidian.commands.executeCommandById(
-                settings.topLeftSearchProvider
+              plugin.openSwitcherCommand(
+                settings.topLeftSearchProvider.command
               );
             },
             children: [
@@ -6462,7 +6559,10 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
         ) }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "beautitab-center", children: [
           settings.showTime && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-time", children: time }),
-          settings.showGreeting && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-greeting", children: settings.greetingText })
+          settings.showGreeting && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-greeting", children: settings.greetingText.replace(
+            /{{greeting}}/gi,
+            getTimeOfDayGreeting_default()
+          ) })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "beautitab-bottom", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-search", children: settings.showInlineSearch && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
@@ -6470,8 +6570,8 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
             {
               className: "beautitab-search-wrapper",
               onClick: () => {
-                obsidian.commands.executeCommandById(
-                  settings.inlineSearchProvider
+                plugin.openSwitcherCommand(
+                  settings.inlineSearchProvider.command
                 );
               },
               children: [
@@ -6481,17 +6581,35 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
             }
           ) }),
           settings.showRecentFiles && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-recentlyedited", children: latestModifiedMarkdownFiles == null ? void 0 : latestModifiedMarkdownFiles.map(
-            (file) => file instanceof import_obsidian.TFile && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+            (file) => file instanceof import_obsidian2.TFile && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
               "a",
               {
                 className: "beautitab-recentlyedited-file",
                 "data-path": file.path,
                 onClick: () => {
                   let leaf = obsidian == null ? void 0 : obsidian.workspace.getMostRecentLeaf();
-                  file instanceof import_obsidian.TFile && (leaf == null || leaf.openFile(file));
+                  file instanceof import_obsidian2.TFile && (leaf == null || leaf.openFile(file));
                 },
                 children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { name: "file" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "beautitab-recentlyedited-file-name", children: file.basename })
+                ]
+              },
+              file.path
+            )
+          ) }),
+          settings.showBookmarks && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "beautitab-recentlyedited", children: bookmarks == null ? void 0 : bookmarks.map(
+            (file) => file && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+              "a",
+              {
+                className: "beautitab-recentlyedited-file",
+                "data-path": file.path,
+                onClick: () => {
+                  let leaf = obsidian == null ? void 0 : obsidian.workspace.getMostRecentLeaf();
+                  file instanceof import_obsidian2.TFile && (leaf == null || leaf.openFile(file));
+                },
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { name: "bookmark" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "beautitab-recentlyedited-file-name", children: file.basename })
                 ]
               },
@@ -6513,11 +6631,11 @@ var import_jsx_runtime = __toESM(require_jsx_runtime()), Icon = ({ name }) => {
 }, App_default = App;
 
 // Views/ReactView.tsx
-var import_jsx_runtime2 = __toESM(require_jsx_runtime()), BEAUTITAB_REACT_VIEW = "beautitab-react-view", ReactView = class extends import_obsidian2.FileView {
-  constructor(app, settingsObservable, leaf) {
+var import_jsx_runtime2 = __toESM(require_jsx_runtime()), BEAUTITAB_REACT_VIEW = "beautitab-react-view", ReactView = class extends import_obsidian3.FileView {
+  constructor(app, settingsObservable, leaf, plugin) {
     super(leaf);
     this.root = null;
-    this.app = app, this.settingsObservable = settingsObservable, this.allowNoFile = !0;
+    this.app = app, this.settingsObservable = settingsObservable, this.allowNoFile = !0, this.plugin = plugin;
   }
   getViewType() {
     return BEAUTITAB_REACT_VIEW;
@@ -6530,7 +6648,13 @@ var import_jsx_runtime2 = __toESM(require_jsx_runtime()), BEAUTITAB_REACT_VIEW =
   }
   async onOpen() {
     this.root = (0, import_client.createRoot)(this.contentEl), this.root.render(
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(ObsidianContext.Provider, { value: this.app, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(App_default, { settingsObservable: this.settingsObservable }) })
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(ObsidianContext.Provider, { value: this.app, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+        App_default,
+        {
+          settingsObservable: this.settingsObservable,
+          plugin: this.plugin
+        }
+      ) })
     ), this.containerEl.addClass("beautitab");
   }
   async onClose() {
@@ -6539,7 +6663,7 @@ var import_jsx_runtime2 = __toESM(require_jsx_runtime()), BEAUTITAB_REACT_VIEW =
   }
 };
 
-// Utils/Observable.ts
+// src/Utils/Observable.ts
 var Observable = class {
   constructor(value) {
     this.subscribers = [];
@@ -6571,36 +6695,419 @@ var Observable = class {
   }
 }, Observable_default = Observable;
 
-// Utils/capitalizeFirstLetter.ts
+// src/Settings/Settings.ts
+var import_fs = __toESM(require("fs"));
+var import_obsidian8 = require("obsidian");
+
+// src/ChooseSearchProvider/ChooseSearchProvider.ts
+var import_obsidian4 = require("obsidian");
+var ChooseSearchProvider = class extends import_obsidian4.FuzzySuggestModal {
+  constructor(app, settings, onSubmit) {
+    super(app), this.settings = settings, this.onSubmit = onSubmit;
+  }
+  getItems() {
+    let allCommands = Object.entries(this.app.commands.commands).filter(
+      (pluginId) => SEARCH_PROVIDER.includes(pluginId[0].split(":")[0])
+    ), searchProviders = [];
+    return allCommands.forEach((command) => {
+      searchProviders.push({
+        command: command[0],
+        display: command[1].name
+      });
+    }), searchProviders;
+  }
+  getItemText(item) {
+    return item.display;
+  }
+  onChooseItem(item, evt) {
+    this.result = item, this.onSubmit(item), this.close();
+  }
+}, ChooseSearchProvider_default = ChooseSearchProvider;
+
+// src/CustomQuotesModel/CustomQuotesModel.ts
+var import_obsidian6 = require("obsidian");
+
+// src/ConfirmModal/ConfirmModal.ts
+var import_obsidian5 = require("obsidian"), ConfirmModal = class extends import_obsidian5.Modal {
+  constructor(app, onConfirm, title, text, confirmButtonText, cancelButtonText = "Cancel") {
+    super(app), this._onConfirm = onConfirm, this._title = title, this._text = text, this._confirmButtonText = confirmButtonText, this._cancelButtonText = cancelButtonText;
+  }
+  onOpen() {
+    let { contentEl } = this;
+    contentEl.createEl("h2", { text: this._title }), contentEl.createEl("p", { text: this._text }), new import_obsidian5.Setting(contentEl).addButton((component) => {
+      component.setButtonText(this._confirmButtonText), component.setClass("mod-warning"), component.onClick(() => {
+        this._onConfirm(), this.close();
+      });
+    }).addButton((component) => {
+      component.setButtonText(this._cancelButtonText), component.onClick(() => {
+        this.close();
+      });
+    });
+  }
+  onClose() {
+    let { contentEl } = this;
+    contentEl.empty();
+  }
+}, ConfirmModal_default = ConfirmModal;
+
+// src/CustomQuotesModel/CustomQuotesModel.ts
+var CustomQuotesModel = class extends import_obsidian6.Modal {
+  constructor(plugin, onSave) {
+    super(plugin.app), this._plugin = plugin, this._onSave = onSave, this._customQuotes = JSON.parse(
+      JSON.stringify(this._plugin.settings.customQuotes)
+    );
+  }
+  onOpen() {
+    this.display();
+  }
+  onClose() {
+    let { contentEl } = this;
+    contentEl.empty();
+  }
+  display() {
+    let { contentEl } = this;
+    contentEl.empty(), contentEl.createEl("h2", { text: "Custom quotes" });
+    let table = contentEl.createEl("table", { cls: "customQuotesTable" }), headerRow = table.createEl("thead").createEl("tr");
+    headerRow.createEl("th"), headerRow.createEl("th", { text: "Text" }), headerRow.createEl("th", { text: "Author" });
+    let tbody = table.createEl("tbody");
+    this._customQuotes.forEach((customQuote, index) => {
+      let tableRow = tbody.createEl("tr");
+      tableRow.createEl("td").createEl("button", {
+        text: "Remove",
+        cls: "mod-warning"
+      }).addEventListener("click", () => {
+        new ConfirmModal_default(
+          this.app,
+          () => {
+            this._customQuotes.splice(index, 1), this.display();
+          },
+          "Remove quote",
+          "Are you sure?",
+          "Remove"
+        ).open();
+      }), tableRow.createEl("td").createEl("textarea", {
+        text: customQuote.text
+      }).addEventListener("change", (e) => {
+        var _a;
+        this._customQuotes[index].text = (_a = e.target) == null ? void 0 : _a.value;
+      }), tableRow.createEl("td").createEl("input", {
+        type: "text",
+        value: customQuote.author
+      }).addEventListener("change", (e) => {
+        var _a;
+        this._customQuotes[index].author = (_a = e.target) == null ? void 0 : _a.value;
+      });
+    }), new import_obsidian6.Setting(contentEl).addButton((component) => {
+      component.setButtonText("Add new quote").onClick(() => {
+        this._customQuotes.push({
+          text: "",
+          author: ""
+        }), this.display();
+      });
+    }), new import_obsidian6.Setting(contentEl).addButton((component) => {
+      component.setButtonText("Save"), component.setCta().onClick(() => {
+        this._onSave(this._customQuotes), this.close();
+      });
+    });
+  }
+}, CustomQuotesModel_default = CustomQuotesModel;
+
+// src/Utils/capitalizeFirstLetter.ts
 var capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1), capitalizeFirstLetter_default = capitalizeFirstLetter;
 
-// main.ts
-var SearchProvider = /* @__PURE__ */ ((SearchProvider2) => (SearchProvider2.SWITCHER = "switcher:open", SearchProvider2.OMNISEARCH = "omnisearch:show-modal", SearchProvider2))(SearchProvider || {}), BackgroundTheme = /* @__PURE__ */ ((BackgroundTheme2) => (BackgroundTheme2.SEASONS_AND_HOLIDAYS = "seasons and holidays", BackgroundTheme2.WINTER = "winter", BackgroundTheme2.SPRING = "spring", BackgroundTheme2.SUMMER = "summer", BackgroundTheme2.FALL = "fall", BackgroundTheme2.MOUNTAIN = "mountains", BackgroundTheme2.LAKES = "lakes", BackgroundTheme2.FOREST = "forest", BackgroundTheme2.ANIMALS = "animals", BackgroundTheme2.CUSTOM = "custom", BackgroundTheme2))(BackgroundTheme || {}), SearchProviders = [
-  {
-    display: "Quick Switcher",
-    value: "switcher:open" /* SWITCHER */
-  },
-  {
-    display: "Omnisearch",
-    value: "omnisearch:show-modal" /* OMNISEARCH */
+// src/Settings/Settings.ts
+var import_electron = __toESM(require("electron"));
+
+// src/ChooseImageSuggestModal/ChooseImageSuggestModal.ts
+var import_obsidian7 = require("obsidian"), ChooseImageSuggestModal = class extends import_obsidian7.FuzzySuggestModal {
+  constructor(app, onSubmit) {
+    super(app), this.onSubmit = onSubmit;
   }
+  /**
+   * Gets all png/jpg images from the vault
+   */
+  getItems() {
+    return this.app.vault.getFiles().filter((f) => ["jpg", "jpeg", "png"].includes(f.extension));
+  }
+  getItemText(item) {
+    return item.name;
+  }
+  onChooseItem(item, evt) {
+    this.result = item, this.onSubmit(item), this.close();
+  }
+}, ChooseImageSuggestModal_default = ChooseImageSuggestModal;
+
+// src/Settings/Settings.ts
+var DEFAULT_SEARCH_PROVIDER = {
+  command: "switcher:open",
+  display: "Obsidian Core Quick Switcher"
+}, SEARCH_PROVIDER = [
+  "switcher",
+  "omnisearch",
+  "darlal-switcher-plus",
+  "obsidian-another-quick-switcher"
 ], DEFAULT_SETTINGS = {
   backgroundTheme: "seasons and holidays" /* SEASONS_AND_HOLIDAYS */,
   customBackground: "",
+  localBackgrounds: [],
   showTopLeftSearchButton: !0,
-  topLeftSearchProvider: "switcher:open" /* SWITCHER */,
+  topLeftSearchProvider: DEFAULT_SEARCH_PROVIDER,
   showTime: !0,
+  timeFormat: "12-hour" /* TWELVE_HOUR */,
   showGreeting: !0,
   greetingText: "Hello, Beautiful.",
   showInlineSearch: !0,
-  inlineSearchProvider: "switcher:open" /* SWITCHER */,
+  inlineSearchProvider: DEFAULT_SEARCH_PROVIDER,
   showRecentFiles: !0,
-  showQuote: !0
-}, BeautitabPlugin = class extends import_obsidian3.Plugin {
+  showBookmarks: !1,
+  bookmarkSource: "all" /* ALL */,
+  bookmarkGroup: "",
+  showQuote: !0,
+  quoteSource: "Quoteable" /* QUOTEABLE */,
+  customQuotes: []
+}, BeautitabPluginSettingTab = class extends import_obsidian8.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin), this.plugin = plugin;
+  }
+  display() {
+    let { containerEl } = this;
+    containerEl.empty(), new import_obsidian8.Setting(containerEl).setHeading().setName("Background settings"), new import_obsidian8.Setting(containerEl).setName("Background theme").setDesc(
+      'What theme would you like to utilize for the random backgrounds? "Seasons and Holidays" will use a different tag depending on the time of the year. Custom will allow you to input your own url. Local will use the local images imported below.'
+    ).addDropdown((component) => {
+      Object.values(BackgroundTheme).forEach((theme) => {
+        component.addOption(theme, capitalizeFirstLetter_default(theme));
+      }), component.setValue(this.plugin.settings.backgroundTheme), component.onChange((value) => {
+        this.plugin.settings.backgroundTheme = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), this.plugin.settings.backgroundTheme === "custom" /* CUSTOM */ && new import_obsidian8.Setting(containerEl).setName("Custom background url").setDesc("What url should be used for the background image?").addText((component) => {
+      component.setValue(this.plugin.settings.customBackground), component.onChange((value) => {
+        this.plugin.settings.customBackground = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    });
+    let localBackgroundImagesSetting = new import_obsidian8.Setting(containerEl).setName(
+      "Local background images"
+    );
+    this.app.isMobile || localBackgroundImagesSetting.addButton((component) => {
+      component.setButtonText("Add local image"), component.onClick(() => {
+        import_electron.default.remote.dialog.showOpenDialog({
+          properties: ["openFile", "multiSelections"],
+          title: "Add background images",
+          filters: [
+            { name: "Images", extensions: ["jpg", "png"] }
+          ]
+        }).then((result) => {
+          result.canceled || (result.filePaths.forEach((filePath) => {
+            let base64Data = import_fs.default.readFileSync(filePath).toString("base64");
+            this.plugin.settings.localBackgrounds.push(
+              `data:image/png;base64,${base64Data}`
+            );
+          }), this.plugin.saveSettings(), this.display());
+        });
+      });
+    }), localBackgroundImagesSetting.addButton((component) => {
+      component.setButtonText("Add vault image"), component.onClick(() => {
+        new ChooseImageSuggestModal_default(this.app, async (result) => {
+          let fileData = await this.app.vault.readBinary(result), base64Data = (0, import_obsidian8.arrayBufferToBase64)(fileData);
+          this.plugin.settings.localBackgrounds.push(
+            `data:image/png;base64,${base64Data}`
+          ), this.plugin.saveSettings(), this.display();
+        }).open();
+      });
+    });
+    let localBackgroundsDiv = containerEl.createEl("div", {
+      cls: "beautitabsettings-localbackgrounds"
+    });
+    this.plugin.settings.localBackgrounds.forEach(
+      (localBackground, index) => {
+        let backgroundDiv = localBackgroundsDiv.createEl("div", {
+          cls: "beautitabsettings-localbackgrounds-background"
+        });
+        backgroundDiv.createEl("img", {
+          attr: {
+            src: localBackground
+          }
+        }), backgroundDiv.createEl("button", {
+          text: "x",
+          cls: "beautitabsettings-localbackgrounds-background-delete"
+        }), backgroundDiv.addEventListener("click", () => {
+          new ConfirmModal_default(
+            this.app,
+            () => {
+              this.plugin.settings.localBackgrounds.splice(
+                index,
+                1
+              ), this.plugin.saveSettings(), this.display();
+            },
+            "Remove background",
+            "Are you sure?",
+            "Remove"
+          ).open();
+        });
+      }
+    ), new import_obsidian8.Setting(containerEl).setHeading().setName("Search settings"), new import_obsidian8.Setting(containerEl).setName("Show top left search button").setDesc(
+      "Should the search button at the top left of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(
+        this.plugin.settings.showTopLeftSearchButton
+      ), component.onChange((value) => {
+        this.plugin.settings.showTopLeftSearchButton = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Top left search provider").setDesc(
+      "Which plugin should be utilized for search when clicking the top left button?"
+    ).setClass("search-provider").addText((component) => {
+      component.setValue(
+        this.plugin.settings.topLeftSearchProvider.display
+      ), component.setDisabled(!0);
+    }).addButton((component) => {
+      component.setButtonText("Change"), component.setTooltip("Choose search provider"), component.onClick(() => {
+        new ChooseSearchProvider_default(
+          this.app,
+          this.plugin.settings,
+          (result) => {
+            this.plugin.settings.topLeftSearchProvider = result, this.plugin.settingsObservable.setValue(
+              this.plugin.settings
+            ), this.plugin.saveSettings(), this.display();
+          }
+        ).open();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Show inline search").setDesc(
+      "Should the inline search in the middle of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showInlineSearch), component.onChange((value) => {
+        this.plugin.settings.showInlineSearch = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Inline search provider").setDesc(
+      "Which plugin should be utilized for search when clicking the middle of the screen button?"
+    ).setClass("search-provider").addText((component) => {
+      component.setValue(this.plugin.settings.inlineSearchProvider.display).setDisabled(!0);
+    }).addButton((component) => {
+      component.setButtonText("Change"), component.setTooltip("Choose search provider"), component.onClick(() => {
+        new ChooseSearchProvider_default(
+          this.app,
+          this.plugin.settings,
+          (result) => {
+            this.plugin.settings.inlineSearchProvider = result, this.plugin.settingsObservable.setValue(
+              this.plugin.settings
+            ), this.plugin.saveSettings(), this.display();
+          }
+        ).open();
+      });
+    }), new import_obsidian8.Setting(containerEl).setHeading().setName("Time settings"), new import_obsidian8.Setting(containerEl).setName("Show time").setDesc(
+      "Should the time in the middle of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showTime), component.onChange((value) => {
+        this.plugin.settings.showTime = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Time format").setDesc("Should the time be in 12-hour format or 24-hour format?").addDropdown((component) => {
+      component.addOption(
+        "12-hour" /* TWELVE_HOUR */,
+        "12-hour" /* TWELVE_HOUR */
+      ), component.addOption(
+        "24-hour" /* TWENTY_FOUR_HOUR */,
+        "24-hour" /* TWENTY_FOUR_HOUR */
+      ), component.setValue(this.plugin.settings.timeFormat), component.onChange((value) => {
+        this.plugin.settings.timeFormat = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setHeading().setName("Greeting settings"), new import_obsidian8.Setting(containerEl).setName("Show greeting").setDesc(
+      "Should the greeting in the middle of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showGreeting), component.onChange((value) => {
+        this.plugin.settings.showGreeting = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Greeting text").setDesc(
+      "What text should be displayed as a greeting? You can use the {{greeting}} to add a greeting based on the time of the day. (E.g. Good morning)"
+    ).addText((component) => {
+      component.setValue(this.plugin.settings.greetingText), component.onChange((value) => {
+        this.plugin.settings.greetingText = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings();
+      });
+    }), new import_obsidian8.Setting(containerEl).setHeading().setName("Recent file settings"), new import_obsidian8.Setting(containerEl).setName("Show recent files").setDesc(
+      "Should recent files in the middle of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showRecentFiles), component.onChange((value) => {
+        this.plugin.settings.showRecentFiles = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setHeading().setName("Bookmark settings"), new import_obsidian8.Setting(containerEl).setName("Show bookmarks").setDesc(
+      "Should bookmarks in the middle of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showBookmarks), component.onChange((value) => {
+        this.plugin.settings.showBookmarks = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Bookmarks source").setDesc(
+      "Should all bookmarks be displayed or bookmarks from a specific group?"
+    ).addDropdown((component) => {
+      component.addOption("all" /* ALL */, "All bookmarks"), component.addOption(
+        "group" /* GROUP */,
+        "Bookmarks from group"
+      ), component.setValue(this.plugin.settings.bookmarkSource), component.onChange((value) => {
+        this.plugin.settings.bookmarkSource = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), this.plugin.settings.bookmarkSource === "group" /* GROUP */ && new import_obsidian8.Setting(containerEl).setName("Bookmarks group").setDesc("Which group should bookmarks be pulled from?").addDropdown((component) => {
+      getBookmarkGroups(this.app).forEach((group) => {
+        component.addOption(group.title, group.path);
+      }), component.setValue(this.plugin.settings.bookmarkGroup), component.onChange((value) => {
+        this.plugin.settings.bookmarkGroup = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setHeading().setName("Quote settings"), new import_obsidian8.Setting(containerEl).setName("Show quote").setDesc(
+      "Should the quote at the bottom of the new tab screen be displayed?"
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings.showQuote), component.onChange((value) => {
+        this.plugin.settings.showQuote = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Quote source").setDesc(
+      "Where should quotes be pulled from? You can use either built in quotes, your own quotes, or a combination of both."
+    ).addDropdown((component) => {
+      Object.values(QUOTE_SOURCE).forEach((source) => {
+        component.addOption(source, source);
+      }), component.setValue(this.plugin.settings.quoteSource), component.onChange((value) => {
+        this.plugin.settings.quoteSource = value, this.plugin.settingsObservable.setValue(
+          this.plugin.settings
+        ), this.plugin.saveSettings(), this.display();
+      });
+    }), new import_obsidian8.Setting(containerEl).setName("Custom quotes").setDesc(`${this.plugin.settings.customQuotes.length} quotes`).addButton((component) => {
+      component.setButtonText("Edit"), component.onClick(() => {
+        new CustomQuotesModel_default(
+          this.plugin,
+          (modifiedCustomQuotes) => {
+            this.plugin.settings.customQuotes = modifiedCustomQuotes, this.plugin.saveSettings(), this.display();
+          }
+        ).open();
+      });
+    });
+  }
+};
+
+// main.ts
+var BeautitabPlugin = class extends import_obsidian9.Plugin {
   async onload() {
-    await this.loadSettings(), this.settingsObservable = new Observable_default(this.settings), this.registerView(
+    await this.loadSettings(), this.versionCheck(), this.settingsObservable = new Observable_default(this.settings), this.registerView(
       BEAUTITAB_REACT_VIEW,
-      (leaf) => new ReactView(this.app, this.settingsObservable, leaf)
+      (leaf) => new ReactView(this.app, this.settingsObservable, leaf, this)
     ), this.addSettingTab(new BeautitabPluginSettingTab(this.app, this)), this.registerEvent(
       this.app.workspace.on(
         "layout-change",
@@ -6624,6 +7131,29 @@ var SearchProvider = /* @__PURE__ */ ((SearchProvider2) => (SearchProvider2.SWIT
     await this.saveData(this.settings);
   }
   /**
+   * Check the local plugin version against github. If there is a new version, notify the user.
+   */
+  async versionCheck() {
+    let localVersion = "1.6.1", stableVersion = await (0, import_obsidian9.requestUrl)(
+      "https://raw.githubusercontent.com/andrewmcgivery/obsidian-beautitab/main/package.json"
+    ).then(async (res) => {
+      if (res.status === 200)
+        return (await res.json).version;
+    }), betaVersion = await (0, import_obsidian9.requestUrl)(
+      "https://raw.githubusercontent.com/andrewmcgivery/obsidian-beautitab/beta/package.json"
+    ).then(async (res) => {
+      if (res.status === 200)
+        return (await res.json).version;
+    });
+    (localVersion == null ? void 0 : localVersion.indexOf("beta")) !== -1 ? localVersion !== betaVersion && new import_obsidian9.Notice(
+      "There is a beta update available for the Beautitab plugin. Please update to to the latest version to get the latest features!",
+      0
+    ) : localVersion !== stableVersion && new import_obsidian9.Notice(
+      "There is an update available for the Beautitab plugin. Please update to to the latest version to get the latest features!",
+      0
+    );
+  }
+  /**
    * Hijack new tabs and show Beauitab
    */
   onLayoutChange() {
@@ -6632,105 +7162,17 @@ var SearchProvider = /* @__PURE__ */ ((SearchProvider2) => (SearchProvider2.SWIT
       type: BEAUTITAB_REACT_VIEW
     });
   }
-}, BeautitabPluginSettingTab = class extends import_obsidian3.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin), this.plugin = plugin;
-  }
-  display() {
-    let { containerEl } = this;
-    containerEl.empty(), new import_obsidian3.Setting(containerEl).setName("Background theme").setDesc(
-      'What theme would you like to utilize for the random backgrounds? "Seasons and Holidays" will use a different tag depending on the time of the year. Custom will allow you to input your own url.'
-    ).addDropdown((component) => {
-      Object.values(BackgroundTheme).forEach((theme) => {
-        component.addOption(theme, capitalizeFirstLetter_default(theme));
-      }), component.setValue(this.plugin.settings.backgroundTheme), component.onChange((value) => {
-        this.plugin.settings.backgroundTheme = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings(), this.display();
-      });
-    }), this.plugin.settings.backgroundTheme === "custom" /* CUSTOM */ && new import_obsidian3.Setting(containerEl).setName("Custom background url").setDesc("What url should be used for the background image?").addText((component) => {
-      component.setValue(this.plugin.settings.customBackground), component.onChange((value) => {
-        this.plugin.settings.customBackground = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show top left search button").setDesc(
-      "Should the search button at the top left of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(
-        this.plugin.settings.showTopLeftSearchButton
-      ), component.onChange((value) => {
-        this.plugin.settings.showTopLeftSearchButton = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Top left search provider").setDesc(
-      "Which plugin should be utilized for search when clicking the top left button?"
-    ).addDropdown((component) => {
-      SearchProviders.forEach((provider) => {
-        component.addOption(provider.value, provider.display);
-      }), component.setValue(this.plugin.settings.topLeftSearchProvider), component.onChange((value) => {
-        this.plugin.settings.topLeftSearchProvider = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show time").setDesc(
-      "Should the time in the middle of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(this.plugin.settings.showTime), component.onChange((value) => {
-        this.plugin.settings.showTime = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show greeting").setDesc(
-      "Should the greeting in the middle of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(this.plugin.settings.showGreeting), component.onChange((value) => {
-        this.plugin.settings.showGreeting = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Greeting text").setDesc("What text should be displayed as a greeting?").addText((component) => {
-      component.setValue(this.plugin.settings.greetingText), component.onChange((value) => {
-        this.plugin.settings.greetingText = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show inline search").setDesc(
-      "Should the inline search in the middle of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(this.plugin.settings.showInlineSearch), component.onChange((value) => {
-        this.plugin.settings.showInlineSearch = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Inline search provider").setDesc(
-      "Which plugin should be utilized for search when clicking the middle of the screen button?"
-    ).addDropdown((component) => {
-      SearchProviders.forEach((provider) => {
-        component.addOption(provider.value, provider.display);
-      }), component.setValue(this.plugin.settings.inlineSearchProvider), component.onChange((value) => {
-        this.plugin.settings.inlineSearchProvider = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show recent files").setDesc(
-      "Should the recent files in the middle of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(this.plugin.settings.showRecentFiles), component.onChange((value) => {
-        this.plugin.settings.showRecentFiles = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    }), new import_obsidian3.Setting(containerEl).setName("Show quote").setDesc(
-      "Should the quote at the bottom of the new tab screen be displayed?"
-    ).addToggle((component) => {
-      component.setValue(this.plugin.settings.showQuote), component.onChange((value) => {
-        this.plugin.settings.showQuote = value, this.plugin.settingsObservable.setValue(
-          this.plugin.settings
-        ), this.plugin.saveSettings();
-      });
-    });
+  /**
+   * Check if the choosen provider is enabled
+   * If yes: open it by using executeCommandById
+   * If no: Notice the user and tell them to enable it in the settings
+   */
+  openSwitcherCommand(command) {
+    var _a;
+    let pluginID = command.split(":")[0], plugins = this.app.plugins.plugins, internalPlugins = this.app.internalPlugins.plugins;
+    plugins[pluginID] || (_a = internalPlugins[pluginID]) != null && _a.enabled ? this.app.commands.executeCommandById(command) : new import_obsidian9.Notice(
+      `Plugin ${pluginID} is not enabled. Please enable it in the settings.`
+    );
   }
 };
 /*! Bundled license information:
@@ -6779,3 +7221,5 @@ react/cjs/react-jsx-runtime.production.min.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
+
+/* nosourcemap */
