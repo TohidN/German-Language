@@ -1,5 +1,5 @@
 {
-  "commitMessage": "Backup of {{numFiles}} files including: {{files}}",
+  "commitMessage": "{{date}} - Manual Backup of {{numFiles}} files including: {{files}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 15,
   "autoPushInterval": 0,
@@ -13,7 +13,7 @@
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
-  "customMessageOnAutoBackup": true,
+  "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": true,
   "treeStructure": false,
   "refreshSourceControl": true,
@@ -55,5 +55,5 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
-  "autoCommitMessage": "Automatic Backup of {{numFiles}} files including: {{files}}"
+  "autoCommitMessage": "{{date}} - Automatic Backup of {{numFiles}} files including: {{files}}"
 }
