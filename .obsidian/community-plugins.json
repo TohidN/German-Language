@@ -1,5 +1,4 @@
 [
-  "table-editor-obsidian",
   "obsidian-completr",
   "obsidian-doubleshift",
   "obsidian-columns",
@@ -9,5 +8,6 @@
   "beautitab",
   "obsidian-git",
   "folder-notes",
-  "enhanced-symbols-prettifier"
+  "enhanced-symbols-prettifier",
+  "obsidian-link-embed"
 ]

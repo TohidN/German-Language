@@ -11,9 +11,14 @@
             "id": "ffc7768e26dc7992",
             "type": "leaf",
             "state": {
-              "type": "beautitab-react-view",
-              "state": {},
-              "title": "New tab"
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Websites/TodaiiGerman.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TodaiiGerman"
             }
           }
         ]
@@ -140,16 +145,6 @@
               "icon": "lucide-list",
               "title": "Outline of 2024-02-13"
             }
-          },
-          {
-            "id": "890db4e022c5a7c1",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
           }
         ]
       }
@@ -170,8 +165,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ffc7768e26dc7992",
+  "active": "726b4c679e72d863",
   "lastOpenFiles": [
+    "Resources/Courses/LangAdvance",
+    "Resources/Websites/ThoughtCo.com - German.md",
+    "Resources/Websites/ReadLang.com.md",
+    "Resources/Music/LyricsTranslate.md",
+    "Resources/Music",
+    "Resources/Websites/imTranslator.md",
+    "Resources/Websites/GermanVeryEasy.com.md",
+    "Resources/Websites/German for English Speakers.md",
+    "Resources/Websites",
+    "Resources/Blinkist.md",
+    "Resources/Courses/Easy German.md",
+    "Resources/Courses/Deutsch lernen mit der DW (Deutschen Welle).md",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg/DW Deutsch lernen - Nicos Weg.md",
+    "Resources/Software and Applications",
+    "Resources/A1 Resources/Video Cources.md",
+    "Resources/C2 Resources",
+    "Resources/C1 Resources",
+    "Resources/B2 Resources",
+    "Resources/B1 Resources",
+    "Resources/A2 Resources",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - B1.md",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - Tutorial.md",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - A2.md",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - A1.md",
+    "Resources/Courses/DW Deutsch lernen - Nicos Weg",
+    "Resources/Courses/Deutsche Welle - Learn German.md",
+    "Resources/Courses",
     "TEMP/German Language.md",
     "TEMP/Similarities Between German and English.md",
     "Practice Tracker/Meta/Reading Practice.md",
@@ -181,33 +203,6 @@
     "Grammar/Negation.md",
     "Grammar/Time Expressions.md",
     "Road Map.canvas",
-    "TEMP/duolingo-german.pdf",
-    "TEMP/scribd.vpdfs.com_duolingo-german.pdf",
-    "TEMP",
-    "duolingo-german.pdf",
-    "Grammar/Questions/W-Questions/W-Questions.md",
-    "Grammar/Part of Speech/Nouns/Grammatical Genders/Grammatical Genders.md",
-    "Common Phrases/Common Phrases.md",
-    "Grammar/Basics/Uppercase Rules.md",
-    "Grammar/Basics/Umlaut.md",
-    "Grammar/Basics/Simple Sentence Structure.md",
-    "Grammar/Basics/Punctuation signs and writing symbols.md",
-    "Grammar/Basics/Numbers.md",
-    "Grammar/Basics/Greetings.md",
-    "Grammar/Basics/Alphabet.md",
-    "Practice Tracker/2024-02-13.md",
-    "Practice Tracker/Practice Tracker.md",
-    "Grammar/Part of Speech/Nouns/Definite Articles.md",
-    "Common Phrases/Ordering Food.md",
-    "Templates/Practice Tracker.md",
-    "Resources/ReadLang.com.md",
-    "Practice Tracker/2024-02-7.md",
-    "Resources/imTranslator.md",
-    "Practice Tracker/Meta",
-    "Practice Tracker/How To",
-    "Practice Tracker/Music Tracker/List",
-    "Practice Tracker/Music Practice",
-    "Practice Tracker",
-    "Grammar"
+    "Grammar/Questions/W-Questions/W-Questions.md"
   ]
 }

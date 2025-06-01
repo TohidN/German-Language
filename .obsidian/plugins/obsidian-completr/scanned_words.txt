@@ -401,6 +401,7 @@ SmXG
 Sg
 SNO
 SCS
+Speakers
 sign
 semicolon
 space
@@ -829,6 +830,7 @@ sXy
 snv
 sUt
 sl
+stories
 Zeichen
 Zeichendas
 Zeppelin
@@ -1383,6 +1385,8 @@ PEw
 PRp
 Ps
 Prev
+Persian
+Playlists
 point
 parenthesesthe
 parenthesesopening
@@ -1630,6 +1634,7 @@ pRN
 pP
 pVE
 pbN
+provide
 Komma
 Kolon
 Klammerndie
@@ -3567,6 +3572,7 @@ ao
 aUVF
 arL
 aJL
+app
 Leerzeichen
 Ludwig
 Language
@@ -3776,6 +3782,8 @@ LFxn
 LZF
 Lm
 LZS
+Learn
+Life
 runde
 rechte
 right
@@ -5224,6 +5232,7 @@ VWq
 VT
 Vi
 VHu
+Videos
 hyphen
 ha
 hundred
@@ -5903,6 +5912,7 @@ EDjDDn
 Ead
 EEP
 EeX
+Extemsion
 Tilde
 Theodor
 The
@@ -6387,6 +6397,9 @@ tJI
 taL
 tXj
 tVU
+transcript
+translator
+tagged
 German
 Gustav
 Ga
@@ -6849,6 +6862,7 @@ Bah
 BTT
 BIMF
 BqD
+Browser
 Cäsar
 CU
 CaB
@@ -7009,6 +7023,8 @@ CBBB
 Cl
 CFB
 Cac
+Course
+Courses
 Heinrich
 HS
 HoeW
@@ -7444,6 +7460,7 @@ yTxI
 yV
 yE
 yr
+youtube
 Julius
 Js
 JL
@@ -7963,6 +7980,7 @@ McZJ
 MR
 MERaT
 MAG
+MusicMatch
 Nordpol
 Notes
 Numbers
@@ -8125,6 +8143,8 @@ NfC
 Nvg
 NFBH
 NN
+Nicos
+News
 oh
 or
 one
@@ -8259,6 +8279,7 @@ oDOR
 ojl
 opk
 oty
+offline
 Otto
 Oops
 Ordinal
@@ -8711,6 +8732,7 @@ fiZ
 fwe
 fsAE
 fAh
+files
 veh
 vier
 vierzehn
@@ -8863,6 +8885,9 @@ vQkSV
 vVm
 vFeU
 vtsc
+video
+vice
+versa
 Wilhelm
 WT
 WU
@@ -9073,6 +9098,8 @@ WQT
 Wryk
 WeV
 WXF
+Weg
+Welle
 Xanthippe
 XA
 Xyf
