@@ -1,15 +1,19 @@
 {
-  "commitMessage": "{{date}} - Manual Backup of {{numFiles}} files including: {{files}}",
+  "commitMessage": "{{date}} from {{hostname}} - Manual backup of {{numFiles}} files, including:\\n{{files}}",
+  "autoCommitMessage": "{{date}} from {{hostname}} - Automatic backup of {{numFiles}} files, including:\\n{{files}}",
+  "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 15,
   "autoPushInterval": 0,
   "autoPullInterval": 10,
   "autoPullOnBoot": true,
+  "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
+  "showErrorNotices": true,
   "disablePopupsForNoChanges": true,
-  "listChangedFilesInMessageBody": true,
+  "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
@@ -22,7 +26,7 @@
   "changedFilesInStatusBar": true,
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
-  "showBranchStatusBar": true,
+  "showBranchStatusBar": false,
   "setLastSaveToLastCommit": false,
   "submoduleRecurseCheckout": false,
   "gitDir": "",
@@ -54,6 +58,5 @@
     "gutterSpacingFallbackLength": 5,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
-  },
-  "autoCommitMessage": "{{date}} - Automatic Backup of {{numFiles}} files including: {{files}}"
+  }
 }
