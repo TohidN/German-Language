@@ -837,6 +837,8 @@ sUt
 sl
 stories
 strong
+seid
+stands
 Zeichen
 Zeichendas
 Zeppelin
@@ -1186,6 +1188,7 @@ drives
 dürfen
 desire
 dislikes
+direct
 Punkt
 Pronunciation
 Paula
@@ -1400,6 +1403,9 @@ Prev
 Persian
 Playlists
 Placements
+Person
+Past
+Pronouns
 point
 parenthesesthe
 parenthesesopening
@@ -1652,6 +1658,7 @@ present
 permission
 personal
 partial
+passive
 Komma
 Kolon
 Klammerndie
@@ -2621,6 +2628,7 @@ AAd
 An
 Asj
 AQa
+Ana
 ellipsis
 exclamation
 eckigen
@@ -3053,6 +3061,7 @@ FOt
 FWDh
 FiI
 FTu
+Functions
 question
 quotation
 qUS
@@ -3368,6 +3377,7 @@ mH
 mcZ
 möchten
 mögen
+motion
 apostrophe
 aufdie
 at
@@ -3984,6 +3994,7 @@ rvBKz
 rYm
 rule
 require
+ran
 linke
 left
 looses
@@ -4893,6 +4904,7 @@ ggGS
 goes
 gives
 gehe
+gelaufen
 umgekehrte
 understrike
 uh
@@ -5142,6 +5154,7 @@ Ux
 UBq
 UCk
 UKE
+Used
 Viertelgeviertstrich
 Viktor
 Vierzehntel
@@ -5466,6 +5479,10 @@ hyQ
 hFbjJj
 holds
 hinter
+habt
+hattest
+hatten
+hattet
 Rautenzeichen
 Richard
 References
@@ -6450,6 +6467,7 @@ translator
 tagged
 therefor
 talent
+transitive
 German
 Gustav
 Ga
@@ -7076,6 +7094,9 @@ CFB
 Cac
 Course
 Courses
+Commonly
+Conjugation
+Common
 Heinrich
 HS
 HoeW
@@ -8943,6 +8964,7 @@ vtsc
 video
 vice
 versa
+voice
 Wilhelm
 WT
 WU
@@ -9155,6 +9177,7 @@ WeV
 WXF
 Weg
 Welle
+Wir
 Xanthippe
 XA
 Xyf
@@ -9540,6 +9563,16 @@ werden
 wollen
 wish
 weak
+werde
+wirst
+werdet
+wurde
+warst
+wurdest
+waren
+wurden
+wurdet
+worth
 äüöß
 ängstlich
 än
