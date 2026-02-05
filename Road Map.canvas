@@ -16,7 +16,7 @@
 		{"id":"988a870bd0b09081","type":"text","text":"300 to 600 Words","x":-1760,"y":-580,"width":910,"height":50,"color":"3"},
 		{"id":"b13f4072f4c13bf8","type":"text","text":"https://kapitel-zwei.de/en/course-content/","x":-1760,"y":-500,"width":980,"height":50},
 		{"id":"cfb337f515520193","type":"text","text":"Grammar:\n- [[Present Tense]]\n- [[Negation]]\n- Prepositions of place\n- Personal pronouns in the [[Accusative]] Case\n- Most common verbs and their [[Verb Conjugations]]\n\t- [[Modal Verbs]] & [[Auxiliary Verbs]]\n\t- Common verbs such as drinking, eating, reading, writing, …\n- [[Nouns]]\n\t- [[Grammatical Genders]]\n\t- [[Uppercase Rules]]\n\t- [[Plural Forms]]","x":-1730,"y":-1140,"width":920,"height":385},
-		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1730,"y":-1670,"width":185,"height":50},
+		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1730,"y":-1670,"width":150,"height":50},
 		{"id":"b02a7b4fde13fa65","type":"text","text":"[[Umlaut]]","x":-1518,"y":-1670,"width":213,"height":50},
 		{"id":"8190ed0bf46538d2","type":"text","text":"[[Punctuation signs and writing symbols]]","x":-1270,"y":-1670,"width":349,"height":50}
 	],
