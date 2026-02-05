@@ -1,12 +1,20 @@
+All verbs except [[Auxiliary Verbs]]  and [[Modal Verbs]] express an action, state or process.
+
 Verb Types based on regularity:
 - [[Regular Verbs]]
-	- Weak Verbs (thousands) - regular verbs; they follow a fixed pattern.
+	- [[Weak Verbs]] (thousands) - regular verbs; they follow a fixed pattern.
 - Irregular
-	- Auxiliary Verbs  (3 verbs)
+	- [[Auxiliary Verbs]]  (3 verbs): They have a strictly grammatical function and have no meaning of their own.
 		- Sein
 		- Haben
 		- Werden
-	- [[Modal Verbs]]
+	- [[Modal Verbs]] (6 verbs): They come before main verbs and express 6 specific things.
+		- Durfen
+		- Können
+		- Mögen
+		- Müssen
+		- Sollen
+		- Wollen
 	- [[Mixed Verbs]] (9 verbs)
 		- Brennen
 		- Bringen
@@ -17,25 +25,24 @@ Verb Types based on regularity:
 		- Wenden
 		- Wissen
 		- Denken
-	 - Strong Verbs (About 150 verbs)
+	 - [[Strong Verbs]] (About 150 verbs)
+		 - Tun
+		 - Kommen
+		 - Gehen
+		 - Stehen
+		 - Schlafen
+		 - Schreiben
+		 - Sehen
+		 - Essen
+		 - … 
+
 
 ---
-Verb Types based on use:
-- Auxiliary Verbs (3 verbs): They have a strictly grammatical function and have no meaning of their own.
-	- Sein
-	- Haben
-	- Werden
- - [[Modal Verbs]] (6 verbs): They come before main verbs and express 6 specific things. 
-	- Mögen
-	- Müssen
-	- Dürfen
-	- Sollen
-	- Wollen
-	- Können
-- Main Verbs (all the rest): They express an action, state or process.
+Verb can be categorized based on their forms:
+- [[Finite]]: The conjugated form of the verb.
+- [[Infinite]]: The non-conjugated form of the verb.
 
----
-Verbs can also be categorized based on their separability.
+Verbs can be categorized based on their separability.
 - [[Separable Verbs]]: the prefix is separated from the main verb. 
 - [[Inseparable Verbs]](over 12,000): The prefix remains attached to the verb.
 

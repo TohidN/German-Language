@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "Verbs"
             }
+          },
+          {
+            "id": "0c465924106777cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grammar/Basics/Umlaut.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Umlaut"
+            }
           }
         ]
       }
@@ -167,11 +181,15 @@
   },
   "active": "ffc7768e26dc7992",
   "lastOpenFiles": [
-    "Grammar/Part of Speech/Verbs/Mixed Verbs.md",
+    "Grammar/Part of Speech/Verbs/Verb Forms/Verb Forms.md",
     "Grammar/Part of Speech/Verbs/Verbs.md",
+    "Grammar/Part of Speech/Verbs/Strong Verbs.md",
+    "Grammar/Part of Speech/Verbs/Auxiliary Verbs.md",
+    "Grammar/Basics/Umlaut.md",
+    "Road Map.canvas",
+    "Grammar/Part of Speech/Verbs/Mixed Verbs.md",
     "Grammar/Part of Speech/Verbs/Verb Forms/Infinite.md",
     "Grammar/Part of Speech/Verbs/Verb Forms/Finite.md",
-    "Grammar/Part of Speech/Verbs/Verb Forms/Verb Forms.md",
     "Resources/Websites/TodaiiGerman.md",
     "Untitled.md",
     "Resources/Courses/LangAdvance",
@@ -199,10 +217,6 @@
     "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - A2.md",
     "Resources/Courses/DW Deutsch lernen - Nicos Weg/Nicos Weg - A1.md",
     "Resources/Courses/DW Deutsch lernen - Nicos Weg",
-    "Resources/Courses/Deutsche Welle - Learn German.md",
-    "TEMP/German Language.md",
-    "TEMP/Similarities Between German and English.md",
-    "Practice Tracker/Meta/Reading Practice.md",
-    "Road Map.canvas"
+    "Resources/Courses/Deutsche Welle - Learn German.md"
   ]
 }

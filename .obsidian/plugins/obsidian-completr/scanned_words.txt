@@ -402,6 +402,10 @@ Sg
 SNO
 SCS
 Speakers
+Stehen
+Schlafen
+Schreiben
+Sehen
 sign
 semicolon
 space
@@ -2344,6 +2348,7 @@ DEh
 DfWb
 DVJF
 DDF
+Durfen
 Auslassungspunkte
 Ausrufezeichen
 Anführungzeichen
@@ -2811,6 +2816,7 @@ eqZ
 efH
 eRIc
 eww
+except
 Fragezeichen
 Friedrich
 Fünftel
@@ -5917,6 +5923,7 @@ Ead
 EEP
 EeX
 Extemsion
+Essen
 Tilde
 Theodor
 The
@@ -6174,6 +6181,7 @@ TxgX
 TtF
 Tks
 TLiu
+Tun
 tilde
 tseh
 teh
@@ -6608,6 +6616,7 @@ GK
 Gffp
 Gx
 Gjc
+Gehen
 Berta
 BD
 BL
