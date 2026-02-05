@@ -1,5 +1,6 @@
- All verbs except [[Auxiliary Verbs]]  and [[Modal Verbs]] and are called **Main Verbs**. They expresses an action, process, or state and therefor gives the sentence meaning.
+ All verbs except [[Auxiliary Verbs]]  and [[Modal Verbs]] and are called **Main Verbs**(==Vollverb==). They expresses an action, process, or state and therefor gives the sentence meaning.
 
+---
 
 Verb Types based on regularity:
 - [[Regular Verbs]]

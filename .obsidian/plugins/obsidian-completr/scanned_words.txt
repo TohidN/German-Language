@@ -836,6 +836,7 @@ snv
 sUt
 sl
 stories
+strong
 Zeichen
 Zeichendas
 Zeppelin
@@ -1182,6 +1183,9 @@ dYN
 durch
 down
 drives
+dürfen
+desire
+dislikes
 Punkt
 Pronunciation
 Paula
@@ -1644,6 +1648,10 @@ pP
 pVE
 pbN
 provide
+present
+permission
+personal
+partial
 Komma
 Kolon
 Klammerndie
@@ -2182,6 +2190,8 @@ cFq
 cUFYF
 ciL
 cjL
+context
+conditions
 Doppelpunktdas
 Dora
 Do
@@ -2823,6 +2833,8 @@ eww
 except
 either
 expresses
+essential
+expressing
 Fragezeichen
 Friedrich
 Fünftel
@@ -3354,6 +3366,8 @@ mXw
 mNC
 mH
 mcZ
+möchten
+mögen
 apostrophe
 aufdie
 at
@@ -3587,6 +3601,10 @@ arL
 aJL
 app
 around
+auxiliary
+actions
+ability
+advice
 Leerzeichen
 Ludwig
 Language
@@ -3965,6 +3983,7 @@ rTV
 rvBKz
 rYm
 rule
+require
 linke
 left
 looses
@@ -4151,6 +4170,8 @@ lGloJ
 lha
 liuPqQ
 lSd
+legal
+likes
 zu
 zweiundzwanzin
 zwei
@@ -4498,6 +4519,7 @@ buNGF
 bm
 bJg
 bkl
+become
 inequality
 in
 iks
@@ -4659,6 +4681,7 @@ ir
 ivW
 iWs
 icj
+informal
 geschweiften
 geschwungenen
 geh
@@ -4869,6 +4892,7 @@ gIs
 ggGS
 goes
 gives
+gehe
 umgekehrte
 understrike
 uh
@@ -6425,6 +6449,7 @@ transcript
 translator
 tagged
 therefor
+talent
 German
 Gustav
 Ga
@@ -8761,6 +8786,8 @@ fsAE
 fAh
 files
 formal
+forming
+forced
 veh
 vier
 vierzehn
@@ -9509,6 +9536,10 @@ wod
 wK
 wzd
 whether
+werden
+wollen
+wish
+weak
 äüöß
 ängstlich
 än
