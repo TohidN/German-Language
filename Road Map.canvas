@@ -1,7 +1,7 @@
 {
 	"nodes":[
-		{"id":"013bebe8d8497929","type":"group","x":-1800,"y":-1765,"width":2140,"height":1025,"label":"Elementary use of language"},
-		{"id":"cc8c782c4a803038","type":"group","x":-1760,"y":-1685,"width":980,"height":910,"label":"Beginner (A1)"},
+		{"id":"013bebe8d8497929","type":"group","x":-1800,"y":-1765,"width":2140,"height":1145,"label":"Elementary use of language"},
+		{"id":"cc8c782c4a803038","type":"group","x":-1760,"y":-1685,"width":980,"height":985,"label":"Beginner (A1)"},
 		{"id":"e664a1e2e5f139d1","type":"group","x":-720,"y":-1685,"width":980,"height":910,"label":"Basic (A2)"},
 		{"id":"184d6d41e3946d17","type":"group","x":480,"y":-1765,"width":2140,"height":1025,"label":"Independent language use"},
 		{"id":"b05c6425959e09fb","type":"group","x":480,"y":-600,"width":2140,"height":1025,"label":"Autonomous language ability"},
@@ -9,28 +9,20 @@
 		{"id":"bec64d77de6cb6f4","type":"group","x":520,"y":-520,"width":440,"height":580,"label":"Professional (C1)"},
 		{"id":"28496e6eaf23b569","type":"group","x":1550,"y":-1685,"width":440,"height":580,"label":"Fluent (B2)"},
 		{"id":"5735caf725f08b88","type":"group","x":1000,"y":-520,"width":440,"height":580,"label":"Native (C2)"},
-		{"id":"b13f4072f4c13bf8","type":"text","text":"https://kapitel-zwei.de/en/course-content/","x":-1760,"y":-700,"width":980,"height":50},
 		{"id":"0483136a35c7dea4","type":"text","text":"- Talk about Career and work environment\n- Train station, airport, taxi, public transport.\n","x":-620,"y":-1415,"width":580,"height":185},
-		{"id":"988a870bd0b09081","type":"text","text":"300 to 600 Words","x":-1730,"y":-855,"width":910,"height":50,"color":"3"},
-		{"id":"04bafe544edfaf77","type":"text","text":"[[Numbers]]","x":-1730,"y":-1570,"width":250,"height":50},
-		{"id":"b5889f1f4b0a700c","type":"text","text":"Sentence Structures\n- Simple declarative sentences: `Subject + Verb + Object`\n- Sentences with indirect objects: `Subject + Verb + Indirect Object + Direct Object `\n- Sentence extension with conjunctions\n---\n","x":-1440,"y":-1545,"width":640,"height":265},
-		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1730,"y":-1655,"width":250,"height":50},
 		{"id":"58134a0857e0ef8a","type":"text","text":"Prepositions","x":-700,"y":-1655,"width":250,"height":60},
-		{"id":"b02a7b4fde13fa65","type":"text","text":"[[Umlaut]]","x":-1400,"y":-1675,"width":410,"height":50},
-		{"id":"8190ed0bf46538d2","type":"text","text":"[[Punctuation signs and writing symbols]]","x":-1400,"y":-1620,"width":410,"height":50},
-		{"id":"c5325747bcdffe30","type":"text","text":"- [[Greetings]]: Introduce yourself, country, occupations\n- [[Common Phrases]]\n- Talk about People, hobbies, work, Food\n- Talk about travel\n","x":-1195,"y":-1240,"width":390,"height":385},
-		{"id":"cfb337f515520193","type":"text","text":"Grammar:\n- [[Present Tense]]\n- [[Negation]]\n- Prepositions of place\n- Personal pronouns in the [[Accusative]] Case\n- Most common verbs and their [[Verb Conjugations]]\n\t- [[Modal Verbs]] & [[Auxiliary Verbs]]\n\t- Common verbs such as drinking, eating, reading, writing, …\n- [[Nouns]]\n\t- [[Grammatical Genders]]\n\t- [[Uppercase Rules]]\n\t- [[Plural Forms]]","x":-1725,"y":-1240,"width":490,"height":385}
+		{"id":"b02a7b4fde13fa65","type":"text","text":"[[Umlaut]]","x":-1480,"y":-1670,"width":349,"height":50},
+		{"id":"8190ed0bf46538d2","type":"text","text":"[[Punctuation signs and writing symbols]]","x":-1480,"y":-1605,"width":349,"height":50},
+		{"id":"04bafe544edfaf77","type":"text","text":"[[Numbers]]","x":-1480,"y":-1540,"width":349,"height":50},
+		{"id":"5735e754c82cd226","type":"text","text":"Common Sentence Structures\n- Simple declarative sentences: `Subject + Verb + Object`\n- Sentences with indirect objects: `Subject + Verb + Indirect Object + Direct Object `\n- Sentence extension with conjunctions\n---\n- [[Greetings]]: Introduce yourself, country, occupations\n- [[Common Phrases]]\n- Talk about People, hobbies, work, Food\n- Talk about travel","x":-1730,"y":-1472,"width":925,"height":312},
+		{"id":"988a870bd0b09081","type":"text","text":"300 to 600 Words","x":-1760,"y":-580,"width":910,"height":50,"color":"3"},
+		{"id":"b13f4072f4c13bf8","type":"text","text":"https://kapitel-zwei.de/en/course-content/","x":-1760,"y":-500,"width":980,"height":50},
+		{"id":"cfb337f515520193","type":"text","text":"Grammar:\n- [[Present Tense]]\n- [[Negation]]\n- Prepositions of place\n- Personal pronouns in the [[Accusative]] Case\n- Most common verbs and their [[Verb Conjugations]]\n\t- [[Modal Verbs]] & [[Auxiliary Verbs]]\n\t- Common verbs such as drinking, eating, reading, writing, …\n- [[Nouns]]\n\t- [[Grammatical Genders]]\n\t- [[Uppercase Rules]]\n\t- [[Plural Forms]]","x":-1730,"y":-1140,"width":920,"height":385},
+		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1730,"y":-1670,"width":185,"height":50}
 	],
 	"edges":[
-		{"id":"8c9273aa4aa93c29","fromNode":"b59a1a36926859b4","fromSide":"right","toNode":"b02a7b4fde13fa65","toSide":"left"},
-		{"id":"b03726a5824ec913","fromNode":"b59a1a36926859b4","fromSide":"right","toNode":"8190ed0bf46538d2","toSide":"left"},
-		{"id":"037910ad3e7abd66","fromNode":"b59a1a36926859b4","fromSide":"bottom","toNode":"04bafe544edfaf77","toSide":"top","color":"4"},
 		{"id":"14e0dce8dcf42763","fromNode":"cc8c782c4a803038","fromSide":"right","toNode":"e664a1e2e5f139d1","toSide":"left","color":"4"},
 		{"id":"18483861eeace17f","fromNode":"184d6d41e3946d17","fromSide":"bottom","toNode":"b05c6425959e09fb","toSide":"top"},
-		{"id":"38e78fef1e5a6feb","fromNode":"013bebe8d8497929","fromSide":"right","toNode":"184d6d41e3946d17","toSide":"left"},
-		{"id":"a7949ef136a6f96c","fromNode":"04bafe544edfaf77","fromSide":"bottom","toNode":"b5889f1f4b0a700c","toSide":"left"},
-		{"id":"72151108fc732d31","fromNode":"b5889f1f4b0a700c","fromSide":"left","toNode":"cfb337f515520193","toSide":"top"},
-		{"id":"5e88924626d7ab93","fromNode":"cfb337f515520193","fromSide":"right","toNode":"c5325747bcdffe30","toSide":"left"},
-		{"id":"1a993878a8e0f14c","fromNode":"b5889f1f4b0a700c","fromSide":"bottom","toNode":"c5325747bcdffe30","toSide":"top"}
+		{"id":"38e78fef1e5a6feb","fromNode":"013bebe8d8497929","fromSide":"right","toNode":"184d6d41e3946d17","toSide":"left"}
 	]
 }
