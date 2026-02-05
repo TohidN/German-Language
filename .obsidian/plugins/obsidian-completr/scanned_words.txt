@@ -406,6 +406,7 @@ Stehen
 Schlafen
 Schreiben
 Sehen
+Schild
 sign
 semicolon
 space
@@ -1178,6 +1179,9 @@ dW
 dJL
 dnc
 dYN
+durch
+down
+drives
 Punkt
 Pronunciation
 Paula
@@ -2817,6 +2821,8 @@ efH
 eRIc
 eww
 except
+either
+expresses
 Fragezeichen
 Friedrich
 Fünftel
@@ -3580,6 +3586,7 @@ aUVF
 arL
 aJL
 app
+around
 Leerzeichen
 Ludwig
 Language
@@ -4861,6 +4868,7 @@ gyz
 gIs
 ggGS
 goes
+gives
 umgekehrte
 understrike
 uh
@@ -4971,6 +4979,8 @@ ub
 uoC
 uetg
 uic
+unter
+umfährt
 Unterstrich
 Ulrich
 Umlaut
@@ -5242,6 +5252,7 @@ VT
 Vi
 VHu
 Videos
+Vollverb
 hyphen
 ha
 hundred
@@ -5430,6 +5441,7 @@ hKpx
 hyQ
 hFbjJj
 holds
+hinter
 Rautenzeichen
 Richard
 References
@@ -6412,6 +6424,7 @@ tVU
 transcript
 translator
 tagged
+therefor
 German
 Gustav
 Ga
@@ -7738,6 +7751,7 @@ kmy
 kEp
 kHL
 kyu
+knocks
 Martha
 Million
 Mz
@@ -9494,6 +9508,7 @@ wnu
 wod
 wK
 wzd
+whether
 äüöß
 ängstlich
 än
@@ -9697,6 +9712,7 @@ jXO
 übergroß
 übergewichtig
 übermorgen
+über
 Öl
 Öle
 Öfen

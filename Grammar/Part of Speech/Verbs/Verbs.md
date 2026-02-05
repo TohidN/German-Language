@@ -1,4 +1,5 @@
-All verbs except [[Auxiliary Verbs]]  and [[Modal Verbs]] express an action, state or process.
+ All verbs except [[Auxiliary Verbs]]  and [[Modal Verbs]] and are called **Main Verbs**. They expresses an action, process, or state and therefor gives the sentence meaning.
+
 
 Verb Types based on regularity:
 - [[Regular Verbs]]
@@ -38,15 +39,19 @@ Verb Types based on regularity:
 
 
 ---
-Verb can be categorized based on their forms:
+
+Verb can be categorized based on their form([[Verb Prefix]]):
 - [[Finite]]: The conjugated form of the verb.
 - [[Infinite]]: The non-conjugated form of the verb.
+
+---
 
 Verbs can be categorized based on their separability.
 - [[Separable Verbs]]: the prefix is separated from the main verb. 
 - [[Inseparable Verbs]](over 12,000): The prefix remains attached to the verb.
 
 ---
+
 Verb Placements:
 - In statements: The verb again comes in the second position. $subject+verb$
 > [!example] Ich komme aus Deutschland.
