@@ -2,6 +2,7 @@ Verb Types based on regularity:
 - [[Regular Verbs]]
 	- Weak Verbs (thousands) - regular verbs; they follow a fixed pattern.
 - Irregular
+	- Auxilary 
 	- Mixed Verbs (9 verbs)
 		- Brennen
 		- Bringen
