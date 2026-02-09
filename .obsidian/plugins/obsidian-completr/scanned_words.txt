@@ -410,6 +410,10 @@ Schild
 Supplemented
 Speaking
 School
+Smalltalk
+Subordinate
+Subjunctive
+Success
 sign
 semicolon
 space
@@ -852,6 +856,7 @@ scheduling
 subjunctive
 simultaneity
 superlative
+style
 Zeichen
 Zeichendas
 Zeppelin
@@ -1207,6 +1212,10 @@ determiners
 dir
 danken
 dac
+denn
+deshalb
+dass
+differences
 Punkt
 Pronunciation
 Paula
@@ -1430,6 +1439,9 @@ Public
 Products
 Perfect
 Passive
+Partizipialattribute
+Politics
+Participles
 point
 parenthesesthe
 parenthesesopening
@@ -1691,6 +1703,13 @@ problems
 punctuality
 pros
 polite
+perfect
+preteritum
+prepositional
+politics
+philosophies
+participles
+pollution
 Komma
 Kolon
 Klammerndie
@@ -2236,6 +2255,17 @@ comparative
 consequences
 cooking
 certificates
+cce
+complement
+cultural
+calls
+connectives
+cdf
+culture
+climate
+complements
+connectors
+comparison
 Doppelpunktdas
 Dora
 Do
@@ -2407,6 +2437,7 @@ DfWb
 DVJF
 DDF
 Durfen
+Declination
 Auslassungspunkte
 Ausrufezeichen
 Anführungzeichen
@@ -2668,6 +2699,8 @@ AQa
 Ana
 Animals
 Arranging
+Activities
+Adverbial
 ellipsis
 exclamation
 eckigen
@@ -2883,6 +2916,8 @@ expresses
 essential
 expressing
 everyday
+effect
+ebf
 Fragezeichen
 Friedrich
 Fünftel
@@ -3103,6 +3138,8 @@ FiI
 FTu
 Functions
 Final
+Fixed
+Failures
 question
 quotation
 qUS
@@ -3424,6 +3461,8 @@ meal
 meals
 manners
 memories
+mails
+modifiers
 apostrophe
 aufdie
 at
@@ -3664,6 +3703,8 @@ advice
 articles
 appointments
 advertisements
+assumptions
+alternative
 Leerzeichen
 Ludwig
 Language
@@ -3875,6 +3916,7 @@ Lm
 LZS
 Learn
 Life
+Leisure
 runde
 rechte
 right
@@ -4049,6 +4091,11 @@ receiving
 receiver
 routines
 recipes
+relations
+rooms
+renting
+review
+replacement
 linke
 left
 looses
@@ -4239,6 +4286,8 @@ legal
 likes
 learned
 leisure
+letters
+literature
 zu
 zweiundzwanzin
 zwei
@@ -4590,6 +4639,8 @@ become
 ball
 basics
 business
+bdef
+believes
 inequality
 in
 iks
@@ -4970,6 +5021,7 @@ gelaufen
 gefallen
 gardening
 grades
+growth
 umgekehrte
 understrike
 uh
@@ -5223,6 +5275,7 @@ UKE
 Used
 Urban
 University
+Unabridged
 Viertelgeviertstrich
 Viktor
 Vierzehntel
@@ -6058,6 +6111,9 @@ Extemsion
 Essen
 Expand
 Enumerations
+Expressing
+Extended
+Environment
 Tilde
 Theodor
 The
@@ -6554,6 +6610,8 @@ transitive
 than
 theirs
 tui
+trouble
+telephone
 German
 Gustav
 Ga
@@ -7019,6 +7077,7 @@ BIMF
 BqD
 Browser
 Ball
+Books
 Cäsar
 CU
 CaB
@@ -7186,6 +7245,7 @@ Conjugation
 Common
 Countries
 Causes
+Causal
 Heinrich
 HS
 HoeW
@@ -7522,6 +7582,9 @@ IsK
 IBG
 IyI
 Ihrer
+Indicators
+Interpersonal
+Imperative
 yot
 yZ
 ym
@@ -8311,6 +8374,10 @@ NN
 Nicos
 News
 Nutrition
+Nominalization
+Noun
+Nominalized
+Nominal
 oh
 or
 one
@@ -8578,6 +8645,7 @@ OfW
 OAy
 OiOh
 OGR
+Opinions
 Quelle
 Qbui
 QF
@@ -8910,6 +8978,7 @@ forced
 facf
 foot
 ffe
+formation
 veh
 vier
 vierzehn
@@ -9280,6 +9349,8 @@ WXF
 Weg
 Welle
 Wir
+World
+Word
 Xanthippe
 XA
 Xyf
