@@ -857,6 +857,11 @@ subjunctive
 simultaneity
 superlative
 style
+structure
+subordinate
+skills
+speech
+society
 Zeichen
 Zeichendas
 Zeppelin
@@ -985,6 +990,7 @@ Zky
 ZIjP
 ZSw
 ZHl
+Zustandspassiv
 der
 das
 die
@@ -1216,6 +1222,7 @@ denn
 deshalb
 dass
 differences
+dat
 Punkt
 Pronunciation
 Paula
@@ -1442,6 +1449,12 @@ Passive
 Partizipialattribute
 Politics
 Participles
+Probleme
+Präteritum
+Plusquamperfekt
+Präsens
+Participle
+Punctuation
 point
 parenthesesthe
 parenthesesopening
@@ -1710,6 +1723,10 @@ politics
 philosophies
 participles
 pollution
+progress
+perspectives
+passives
+phrases
 Komma
 Kolon
 Klammerndie
@@ -1959,6 +1976,7 @@ KWM
 Kel
 KDU
 KLt
+Konjunktiv
 comma
 colon
 curly
@@ -2266,6 +2284,16 @@ climate
 complements
 connectors
 comparison
+clusters
+constructions
+causal
+concessive
+consecutive
+complex
+conditional
+capitalization
+career
+communication
 Doppelpunktdas
 Dora
 Do
@@ -2438,6 +2466,7 @@ DVJF
 DDF
 Durfen
 Declination
+Describe
 Auslassungspunkte
 Ausrufezeichen
 Anführungzeichen
@@ -2701,6 +2730,9 @@ Animals
 Arranging
 Activities
 Adverbial
+Abstract
+Adjective
+Accurate
 ellipsis
 exclamation
 eckigen
@@ -2918,6 +2950,9 @@ expressing
 everyday
 effect
 ebf
+emails
+essays
+economy
 Fragezeichen
 Friedrich
 Fünftel
@@ -3463,6 +3498,9 @@ manners
 memories
 mails
 modifiers
+media
+multiple
+mixed
 apostrophe
 aufdie
 at
@@ -3705,6 +3743,10 @@ appointments
 advertisements
 assumptions
 alternative
+active
+acc
+affecting
+application
 Leerzeichen
 Ludwig
 Language
@@ -3917,6 +3959,7 @@ LZS
 Learn
 Life
 Leisure
+Lösung
 runde
 rechte
 right
@@ -4096,6 +4139,9 @@ rooms
 renting
 review
 replacement
+reported
+relative
+rules
 linke
 left
 looses
@@ -4641,6 +4687,8 @@ basics
 business
 bdef
 believes
+bevor
+basic
 inequality
 in
 iks
@@ -4806,6 +4854,8 @@ informal
 ihrer
 ihm
 indicating
+infinitiv
+infinite
 geschweiften
 geschwungenen
 geh
@@ -5135,6 +5185,7 @@ uic
 unter
 umfährt
 unser
+usage
 Unterstrich
 Ulrich
 Umlaut
@@ -5412,6 +5463,9 @@ VHu
 Videos
 Vollverb
 Verbsability
+Vorteil
+Vorgangspassiv
+Verbkomplexe
 hyphen
 ha
 hundred
@@ -5609,6 +5663,7 @@ his
 hers
 health
 hobies
+hypothetical
 Rautenzeichen
 Richard
 References
@@ -5770,6 +5825,8 @@ RtA
 Role
 Reflexive
 Relative
+Rede
+Relativsätze
 number
 not
 numbers
@@ -5932,6 +5989,11 @@ nqX
 nominative
 nature
 nationalities
+nachdem
+narrative
+nominalisation
+nominalised
+narratives
 Et
 English
 Example
@@ -6374,6 +6436,8 @@ TLiu
 Tun
 Time
 Technology
+Technical
+Talking
 tilde
 tseh
 teh
@@ -6612,6 +6676,9 @@ theirs
 tui
 trouble
 telephone
+technology
+types
+temporal
 German
 Gustav
 Ga
@@ -7246,6 +7313,8 @@ Common
 Countries
 Causes
 Causal
+Communication
+Complex
 Heinrich
 HS
 HoeW
@@ -7585,6 +7654,10 @@ Ihrer
 Indicators
 Interpersonal
 Imperative
+Indirekte
+Inf
+Infinitivkonstruktionen
+Indirect
 yot
 yZ
 ym
@@ -8209,6 +8282,8 @@ MR
 MERaT
 MAG
 MusicMatch
+Medicine
+Modalverben
 Nordpol
 Notes
 Numbers
@@ -8378,6 +8453,8 @@ Nominalization
 Noun
 Nominalized
 Nominal
+Nachteil
+Nominalisation
 oh
 or
 one
@@ -8518,6 +8595,8 @@ ours
 office
 obligation
 ordering
+opportunities
+obwohl
 Otto
 Oops
 Ordinal
@@ -9136,6 +9215,7 @@ vice
 versa
 voice
 vocabulary
+various
 Wilhelm
 WT
 WU
@@ -9747,6 +9827,9 @@ wurden
 wurdet
 worth
 woman
+wenn
+worden
+wäre
 äüöß
 ängstlich
 än
