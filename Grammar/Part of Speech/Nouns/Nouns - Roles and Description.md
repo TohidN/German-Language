@@ -2,7 +2,7 @@ Nouns can have roles in the sentence that describes them and their relationships
 
 | Case           | Role            | Description                 |
 | -------------- | --------------- | --------------------------- |
-| [[Nominative]] | subject         | takes action                |
-| [[Accusative]] | direct object   | receives action             |
-| [[Dative]]     | indirect object | to/for whom action is taken |
-| [[Genitive]]   | possessive      | indicates ownership         |
+| [[Nominative Case]] | subject         | takes action                |
+| [[Accusative Case]] | direct object   | receives action             |
+| [[Dative Case]]     | indirect object | to/for whom action is taken |
+| [[Genitive Case]]   | possessive      | indicates ownership         |

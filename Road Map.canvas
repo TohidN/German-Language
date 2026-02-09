@@ -1,32 +1,29 @@
 {
 	"nodes":[
 		{"id":"013bebe8d8497929","type":"group","x":-1800,"y":-1765,"width":2140,"height":1145,"label":"Elementary use of language"},
-		{"id":"cc8c782c4a803038","type":"group","x":-1760,"y":-1685,"width":980,"height":985,"label":"Beginner (A1)"},
+		{"id":"184d6d41e3946d17","type":"group","x":480,"y":-1765,"width":2140,"height":1145,"label":"Independent language use"},
+		{"id":"b05c6425959e09fb","type":"group","x":480,"y":-480,"width":2140,"height":1025,"label":"Autonomous language ability"},
+		{"id":"cc8c782c4a803038","type":"group","x":-1760,"y":-1685,"width":980,"height":945,"label":"Beginner (A1)"},
 		{"id":"e664a1e2e5f139d1","type":"group","x":-720,"y":-1685,"width":980,"height":910,"label":"Basic (A2)"},
-		{"id":"184d6d41e3946d17","type":"group","x":480,"y":-1765,"width":2140,"height":1025,"label":"Independent language use"},
-		{"id":"b05c6425959e09fb","type":"group","x":480,"y":-600,"width":2140,"height":1025,"label":"Autonomous language ability"},
 		{"id":"ea6b1c799ec28fd1","type":"group","x":520,"y":-1695,"width":440,"height":590,"label":"Advanced (B1)"},
-		{"id":"bec64d77de6cb6f4","type":"group","x":520,"y":-520,"width":440,"height":580,"label":"Professional (C1)"},
+		{"id":"bec64d77de6cb6f4","type":"group","x":520,"y":-400,"width":440,"height":580,"label":"Professional (C1)"},
 		{"id":"28496e6eaf23b569","type":"group","x":1550,"y":-1685,"width":440,"height":580,"label":"Fluent (B2)"},
-		{"id":"5735caf725f08b88","type":"group","x":1000,"y":-520,"width":440,"height":580,"label":"Native (C2)"},
-		{"id":"0483136a35c7dea4","type":"text","text":"- Talk about Career and work environment\n- Train station, airport, taxi, public transport.\n","x":-620,"y":-1415,"width":580,"height":185},
-		{"id":"58134a0857e0ef8a","type":"text","text":"Prepositions","x":-700,"y":-1655,"width":250,"height":60},
-		{"id":"988a870bd0b09081","type":"text","text":"300 to 600 Words","x":-1760,"y":-580,"width":910,"height":50,"color":"3"},
-		{"id":"b13f4072f4c13bf8","type":"text","text":"https://kapitel-zwei.de/en/course-content/","x":-1760,"y":-500,"width":980,"height":50},
-		{"id":"cfb337f515520193","type":"text","text":"Grammar:\n- Sentence Structure ([[Regular Verbs]] + haben/sein) → [[Negation]] → [[W-Questions]] & [[Yes-No Questions]]\n- [[Nouns]] & [[Grammatical Genders]]\n- Prepositions of place\n- Personal pronouns in the [[Accusative]] Case\n- Most common verbs and their [[Verb Conjugations]]\n\t- [[Modal Verbs]] & [[Auxiliary Verbs]]\n\t- Common verbs such as drinking, eating, reading, writing, …\n- [[Nouns]]\n\t- [[Grammatical Genders]]\n\t- [[Uppercase Rules]]\n\t- [[Plural Forms]]","x":-1730,"y":-1140,"width":920,"height":385},
-		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1740,"y":-1665,"width":150,"height":50},
-		{"id":"b02a7b4fde13fa65","type":"text","text":"[[Umlaut]]","x":-1560,"y":-1665,"width":140,"height":50},
-		{"id":"8190ed0bf46538d2","type":"text","text":"[[Punctuation signs and writing symbols]]","x":-1400,"y":-1665,"width":420,"height":50},
+		{"id":"5735caf725f08b88","type":"group","x":1000,"y":-400,"width":440,"height":580,"label":"Native (C2)"},
+		{"id":"0483136a35c7dea4","type":"text","text":"- Talk about Career and work environment\n- Train station, airport, taxi, public transport.\n","x":-700,"y":-1257,"width":580,"height":185},
+		{"id":"b78facf5e26a3f84","type":"text","text":"1. Expand your vocabulary: food and meals, shopping, numbers/prices, house, school, and office.\n2. Practice new words with structures learned in A1 Level.\n3. Role-play common situations.\n","x":-700,"y":-1665,"width":720,"height":145},
+		{"id":"011a45b0f5106e3a","type":"text","text":"Grammar: \n- [[Modal Verbs]]: ability/permission/obligation (können, dürfen, müssen, wollen, sollen)\n- [[Dative Case]]: dative articles (dem/der/dem/den), [[Dative Pronouns]] (mir, dir, ihm...), common verbs with dative (helfen, danken, gefallen). ","x":-700,"y":-1480,"width":720,"height":180},
 		{"id":"04bafe544edfaf77","type":"text","text":"[[Numbers]]","x":-960,"y":-1665,"width":150,"height":50},
-		{"id":"5735e754c82cd226","type":"text","text":"Common Sentence Structures\n- Simple declarative sentences: `Subject + Verb + Object`\n- Sentences with indirect objects: `Subject + Verb + Indirect Object + Direct Object `\n- Sentence extension with conjunctions\n---\n- [[Greetings]]: Introduce yourself, country, occupations\n- [[Common Phrases]]\n- Talk about People, hobbies, work, Food\n- Talk about travel","x":-1732,"y":-1478,"width":925,"height":312}
+		{"id":"5735e754c82cd226","type":"text","text":"Common Sentence Structures\n- Simple declarative sentences: `Subject + Verb + Object`\n- Sentences with indirect objects: `Subject + Verb + Indirect Object + Direct Object `\n- Sentence extension with conjunctions\n---\n- [[Greetings]]: Introduce yourself, country, occupations\n- [[Common Phrases]]\n- Talk about People, hobbies, work, Food\n- Talk about everyday situations, travel, and transport\n- Time & daily routine","x":-1732,"y":-1595,"width":925,"height":338},
+		{"id":"cfb337f515520193","type":"text","text":"Grammar:\n- Sentence Structure → [[Negation]] → [[W-Questions]] & [[Yes-No Questions]]\n- [[Nouns]] & [[Grammatical Genders]]\n- Prepositions of place\n- [[Personal Pronouns]], [[Possessive Pronouns]] and  [[Accusative Case]]\n- Most common verbs and their [[Verb Conjugations]]\n\t- [[Modal Verbs]] & [[Auxiliary Verbs]] &  [[Separable Verbs]]\n\t- Most common [[Regular Verbs]]. E.g. drinking, eating, reading, writing, …\n- [[Nouns]]\n\t- [[Grammatical Genders]]\n\t- [[Uppercase Rules]]\n\t- [[Plural Forms]]\n- [[Past Tense]] basics (Perfekt) ","x":-1730,"y":-1230,"width":920,"height":385},
+		{"id":"8190ed0bf46538d2","type":"text","text":"[[Punctuation signs and writing symbols]]","x":-1400,"y":-1665,"width":420,"height":50},
+		{"id":"b02a7b4fde13fa65","type":"text","text":"[[Umlaut]]","x":-1560,"y":-1665,"width":140,"height":50},
+		{"id":"988a870bd0b09081","type":"text","text":"300 to 600 Words","x":-1732,"y":-820,"width":922,"height":50,"color":"3"},
+		{"id":"b59a1a36926859b4","type":"text","text":"[[Alphabet]]","x":-1740,"y":-1665,"width":150,"height":50},
+		{"id":"b13f4072f4c13bf8","type":"text","text":"https://kapitel-zwei.de/en/course-content/","x":-1760,"y":-500,"width":980,"height":50}
 	],
 	"edges":[
 		{"id":"14e0dce8dcf42763","fromNode":"cc8c782c4a803038","fromSide":"right","toNode":"e664a1e2e5f139d1","toSide":"left","color":"4"},
 		{"id":"18483861eeace17f","fromNode":"184d6d41e3946d17","fromSide":"bottom","toNode":"b05c6425959e09fb","toSide":"top"},
-		{"id":"38e78fef1e5a6feb","fromNode":"013bebe8d8497929","fromSide":"right","toNode":"184d6d41e3946d17","toSide":"left"},
-		{"id":"ff2ba7ee2f058248","fromNode":"b59a1a36926859b4","fromSide":"bottom","toNode":"5735e754c82cd226","toSide":"top"},
-		{"id":"5e06549453a2b09d","fromNode":"b02a7b4fde13fa65","fromSide":"bottom","toNode":"5735e754c82cd226","toSide":"top"},
-		{"id":"075d39b3ec7285a7","fromNode":"8190ed0bf46538d2","fromSide":"bottom","toNode":"5735e754c82cd226","toSide":"top"},
-		{"id":"81e69b040cce6b50","fromNode":"04bafe544edfaf77","fromSide":"bottom","toNode":"5735e754c82cd226","toSide":"top"}
+		{"id":"38e78fef1e5a6feb","fromNode":"013bebe8d8497929","fromSide":"right","toNode":"184d6d41e3946d17","toSide":"left"}
 	]
 }

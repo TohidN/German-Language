@@ -7,10 +7,10 @@ In nominative and accusative, only the masculine forms change:
 
 | [[Indefinite Articles]] | [[Masculine]] | [[Neuter]] | [[Feminine]] |
 | ----------------------- | ------------- | ---------- | ------------ |
-| [[Nominative]]          | ein           | ein        | eine         |
-| [[Accusative]]          | einen         | ein        | eine         |
+| [[Nominative Case]]          | ein           | ein        | eine         |
+| [[Accusative Case]]          | einen         | ein        | eine         |
 
 | [[Definite Articles]] | [[Masculine]] | [[Neuter]] | [[Feminine]] | [[Plural Forms]] |
 | --------------------- | ------------- | ---------- | ------------ | ---------------- |
-| [[Nominative]]        | der           | das        | die          | die              |
-| [[Accusative]]        | den           | das        | die          | die              |
+| [[Nominative Case]]        | der           | das        | die          | die              |
+| [[Accusative Case]]        | den           | das        | die          | die              |
