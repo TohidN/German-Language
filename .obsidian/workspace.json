@@ -15,16 +15,29 @@
               "state": {
                 "file": "Road Map.canvas",
                 "viewState": {
-                  "x": 1425.8982296414042,
-                  "y": -979.5000561200425,
+                  "x": -860.3283501863314,
+                  "y": -862.8823807063667,
                   "zoom": -0.8000000000000002
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Road Map"
             }
+          },
+          {
+            "id": "23f8fa145ea6c637",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ffc7768e26dc7992",
+  "active": "23f8fa145ea6c637",
   "lastOpenFiles": [
     "Grammar/Part of Speech/Pronouns/Possessive Pronouns.md",
     "Grammar/Tenses/Past Tense.md",

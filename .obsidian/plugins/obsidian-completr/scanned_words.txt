@@ -862,6 +862,9 @@ subordinate
 skills
 speech
 society
+summarising
+stance
+spoken
 Zeichen
 Zeichendas
 Zeppelin
@@ -991,6 +994,7 @@ ZIjP
 ZSw
 ZHl
 Zustandspassiv
+Zustands
 der
 das
 die
@@ -1223,6 +1227,7 @@ deshalb
 dass
 differences
 dat
+disagreeing
 Punkt
 Pronunciation
 Paula
@@ -1455,6 +1460,7 @@ Plusquamperfekt
 Präsens
 Participle
 Punctuation
+Pragmatic
 point
 parenthesesthe
 parenthesesopening
@@ -1727,6 +1733,9 @@ progress
 perspectives
 passives
 phrases
+politely
+presentations
+positioning
 Komma
 Kolon
 Klammerndie
@@ -2294,6 +2303,10 @@ conditional
 capitalization
 career
 communication
+complexity
+chaining
+citing
+colloquial
 Doppelpunktdas
 Dora
 Do
@@ -2733,6 +2746,7 @@ Adverbial
 Abstract
 Adjective
 Accurate
+Academic
 ellipsis
 exclamation
 eckigen
@@ -2953,6 +2967,8 @@ ebf
 emails
 essays
 economy
+embedding
+evaluation
 Fragezeichen
 Friedrich
 Fünftel
@@ -3175,6 +3191,7 @@ Functions
 Final
 Fixed
 Failures
+Formal
 question
 quotation
 qUS
@@ -3747,6 +3764,8 @@ active
 acc
 affecting
 application
+argumentation
+academic
 Leerzeichen
 Ludwig
 Language
@@ -4142,6 +4161,10 @@ replacement
 reported
 relative
 rules
+requesting
+reports
+registers
+reporting
 linke
 left
 looses
@@ -4334,6 +4357,7 @@ learned
 leisure
 letters
 literature
+lexical
 zu
 zweiundzwanzin
 zwei
@@ -4689,6 +4713,7 @@ bdef
 believes
 bevor
 basic
+bundles
 inequality
 in
 iks
@@ -4856,6 +4881,10 @@ ihm
 indicating
 infinitiv
 infinite
+identifying
+irony
+implicit
+interaction
 geschweiften
 geschwungenen
 geh
@@ -5664,6 +5693,7 @@ hers
 health
 hobies
 hypothetical
+hedging
 Rautenzeichen
 Richard
 References
@@ -6679,6 +6709,7 @@ telephone
 technology
 types
 temporal
+thesis
 German
 Gustav
 Ga
@@ -7658,6 +7689,7 @@ Indirekte
 Inf
 Infinitivkonstruktionen
 Indirect
+Inferencing
 yot
 yZ
 ym
@@ -9058,6 +9090,7 @@ facf
 foot
 ffe
 formation
+functions
 veh
 vier
 vierzehn
@@ -9216,6 +9249,7 @@ versa
 voice
 vocabulary
 various
+variants
 Wilhelm
 WT
 WU
