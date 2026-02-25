@@ -4,40 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "172ae1567bbe7e4f",
+        "id": "e07033d52059eeb9",
         "type": "tabs",
         "children": [
           {
-            "id": "ffc7768e26dc7992",
+            "id": "8c89bfc93c5ae461",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Road Map.canvas",
-                "viewState": {
-                  "x": -860.3283501863314,
-                  "y": -862.8823807063667,
-                  "zoom": -0.8000000000000002
-                }
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Road Map"
-            }
-          },
-          {
-            "id": "23f8fa145ea6c637",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,14 +166,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23f8fa145ea6c637",
+  "active": "8c89bfc93c5ae461",
   "lastOpenFiles": [
+    "Road Map.canvas",
     "Grammar/Part of Speech/Pronouns/Possessive Pronouns.md",
     "Grammar/Tenses/Past Tense.md",
     "Grammar/Tenses/Present Tense.md",
     "Grammar/Tenses/Perfect Tense.md",
     "Grammar/Tenses/Tenses.md",
-    "Road Map.canvas",
     "Grammar/Part of Speech/Pronouns/Pronouns.md",
     "Grammar/Part of Speech/Pronouns/Possessive & Genitive Pronouns.md",
     "Grammar/Part of Speech/Nouns/Cases/Nominative Case.md",
@@ -212,7 +196,6 @@
     "Grammar/Part of Speech/Verbs/Verb Types/Weak Verbs.md",
     "Grammar/Part of Speech/Verbs/Verb Types/Modal Verbs.md",
     "Grammar/Part of Speech/Verbs/Verb Types/Mixed Verbs.md",
-    "Grammar/Part of Speech/Verbs/Full Verbs.md",
     "Grammar/Part of Speech/Verbs/Verb Types",
     "Grammar/Part of Speech/Verbs/Verb Prefix",
     "Resources/Courses/LangAdvance",
